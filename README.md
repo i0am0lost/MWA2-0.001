@@ -9,6 +9,27 @@ relationship survives even while the other character is "away" in another world)
 > This repo contains **project tooling only** (mods, a Python orchestrator, the DB, docs) — **not** the
 > ~21 GB game installs or saves (see `.gitignore`). Paths are derived at runtime, so it's portable.
 
+## What this really is — and why it replicates
+This isn't "a jail mod". It's a **generic multi-world extension** for AA2. **"Jail" is just the first
+instance** — the proof of concept. The expensive part is built **once**: the engine workarounds (two
+pre-loaded instances, instant switch via window-hide + process-suspend, the patched multi-client PPeX
+server, the single-instance-mutex bypass, the menu-load path), plus the **interaction-triggered transfer**
+and the **SSOT memory layer**.
+
+After that, **each additional world (Resort, Beach, Apartment, …) is mostly a config entry + a reskin** —
+*"worlds as config, not hardcoded"*: switch / transfer / memory are all parametrized by world-ID. So **if
+it works, it replicates almost for free.**
+
+And the payoff is **emergent, not hand-coded**: a character develops differently in different worlds — e.g.
+one comes back with high virtue while the one who stayed dropped low — and AA2's own compatibility engine
+sees the divergence and produces friction/drama **by itself**. You only have to transfer the diverged
+values correctly (the SSOT/relationship memory does that).
+
+**Honest boundary (hard engine limits):** every world is the *same* AA2 map, reskinned + nodes gated — a
+"Beach" is the school map with beach textures, not new geometry; the same action vocabulary everywhere.
+It is *"the same social simulation in another place, dressed and populated differently"* — which is exactly
+the point, and what makes it replicable.
+
 ## Where it stands (late 2026-06-24)
 **Foundation (done, proven live):**
 - Instant switch between two pre-loaded worlds (patched multi-client PPeX server, AA2 single-instance
