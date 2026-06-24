@@ -1,0 +1,66 @@
+Ziel-PIDs: 29316
+PID 29316  Section   ->  \BaseNamedObjects\__ComCatalogCache__
+PID 29316  Section   ->  \Windows\Theme621448215
+PID 29316  Section   ->  \Sessions\1\Windows\Theme2162188303
+PID 29316  Section   ->  \Sessions\1\BaseNamedObjects\windows_shell_global_counters
+PID 29316  Event     ->  \Sessions\1\BaseNamedObjects\AMDSetHookE_7284
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\__DDrawExclMode__
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\__DDrawCheckExclMode__
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\DDrawWindowListMutex
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\DDrawDriverObjectListMutex
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\__AA2Play_Class__
+PID 29316  Section   ->  \BaseNamedObjects\__ComCatalogCache__
+PID 29316  Event     ->  \KernelObjects\MaximumCommitCondition
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\eed3bd3a-a1ad-4e99-987b-d7cb3fcfa7f0 - S-1-5-21-2471586797-217045238-3860814922-1001
+PID 29316  Section   ->  \Sessions\1\BaseNamedObjects\DirectSound Administrator shared thread array
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\DirectSound Administrator shared thread array (lock
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\DirectInput.{89521361-AA8A-11CF-BFC7-444553540000}
+PID 29316  Section   ->  \Sessions\1\BaseNamedObjects\DirectInput.{5944E681-C92E-11CF-BFC7-444553540000}
+PID 29316  Mutant    ->  \Sessions\1\BaseNamedObjects\DirectInput.{5944E682-C92E-11CF-BFC7-444553540000}
+Fertig (Handles). 18 interessante benannte Objekte.
+=== Top-Level-Fenster der Ziel-PIDs (fuer FindWindow-basierte Single-Instance) ===
+PID 29316  HWND F0CA6  class='tooltips_class32'  title=''
+PID 29316  HWND 140C3E  class='tooltips_class32'  title=''
+PID 29316  HWND 170514  class='tooltips_class32'  title=''
+PID 29316  HWND 140728  class='tooltips_class32'  title=''
+PID 29316  HWND 240118  class='tooltips_class32'  title=''
+PID 29316  HWND 1506AC  class='tooltips_class32'  title=''
+PID 29316  HWND 13065C  class='tooltips_class32'  title=''
+PID 29316  HWND 3106BC  class='tooltips_class32'  title=''
+PID 29316  HWND 290292  class='tooltips_class32'  title=''
+PID 29316  HWND 160632  class='tooltips_class32'  title=''
+PID 29316  HWND 150C32  class='tooltips_class32'  title=''
+PID 29316  HWND 2F005C  class='tooltips_class32'  title=''
+PID 29316  HWND 190C8E  class='tooltips_class32'  title=''
+PID 29316  HWND 150C82  class='tooltips_class32'  title=''
+PID 29316  HWND 120C78  class='tooltips_class32'  title=''
+PID 29316  HWND 1C0C48  class='tooltips_class32'  title=''
+PID 29316  HWND 16003E  class='tooltips_class32'  title=''
+PID 29316  HWND 15071A  class='tooltips_class32'  title=''
+PID 29316  HWND 1207B4  class='tooltips_class32'  title=''
+PID 29316  HWND D071C  class='tooltips_class32'  title=''
+PID 29316  HWND 130C2E  class='tooltips_class32'  title=''
+PID 29316  HWND 11045A  class='tooltips_class32'  title=''
+PID 29316  HWND 110C56  class='tooltips_class32'  title=''
+PID 29316  HWND 100C58  class='tooltips_class32'  title=''
+PID 29316  HWND 1606D2  class='tooltips_class32'  title=''
+PID 29316  HWND 3C04EC  class='tooltips_class32'  title=''
+PID 29316  HWND 110C6A  class='tooltips_class32'  title=''
+PID 29316  HWND E0C66  class='tooltips_class32'  title=''
+PID 29316  HWND 340C4C  class='tooltips_class32'  title=''
+PID 29316  HWND 2B069A  class='tooltips_class32'  title=''
+PID 29316  HWND E074A  class='tooltips_class32'  title=''
+PID 29316  HWND 24078C  class='GDI+ Hook Window Class'  title='GDI+ Window (AA2Play.exe)'
+PID 29316  HWND 2D0678  class='__AA2Play_Class__'  title='????????2'
+PID 29316  HWND F05E2  class='IupDialog'  title='AA2Unlimited 1.10.0  '
+PID 29316  HWND 120C40  class='ComboLBox'  title=''
+PID 29316  HWND 120C3C  class='ComboLBox'  title=''
+PID 29316  HWND D0746  class='ComboLBox'  title=''
+PID 29316  HWND F06A2  class='ComboLBox'  title=''
+PID 29316  HWND 160650  class='ComboLBox'  title=''
+PID 29316  HWND 1D072E  class='ComboLBox'  title=''
+PID 29316  HWND 10043E  class='ComboLBox'  title=''
+PID 29316  HWND 340C96  class='IME'  title='Default IME'
+PID 29316  HWND 250516  class='MSCTFIME UI'  title='MSCTFIME UI'
+PID 29316  HWND 2A06CC  class='IME'  title='Default IME'
+Fertig (Fenster).

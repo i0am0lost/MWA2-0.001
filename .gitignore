@@ -1,0 +1,33 @@
+# --- Game installs (21 GB EACH) - NEVER commit -------------------------------
+# Our custom/modified files inside these are tracked explicitly via `git add -f`.
+/school/
+/jail/
+/AA2MiniPPX/
+
+# --- Runtime state / saves / playthrough data --------------------------------
+/_playthroughs/
+/_backup/
+*.flag
+*.sav
+*.json.tmp
+_ppex_server.log
+
+# --- Nested clone (aa2g/PPeX with our Pipe.cs patch) -------------------------
+# Tracked separately if needed; the clone itself is large + has its own upstream.
+/_ppex_src/
+
+# --- Build artifacts ---------------------------------------------------------
+**/bin/
+**/obj/
+**/Backup/
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.pyc
+
+# --- Editor / OS / tooling ---------------------------------------------------
+.vs/
+*.user
+Thumbs.db
+desktop.ini
+.claude/
