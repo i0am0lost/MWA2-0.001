@@ -4,7 +4,7 @@
 > **discovered but not (yet) used**, because they may matter later. Compiled 2026-06-27 from all docs in the
 > old `D:\Games\MWA2` tree (handovers, the RE notes, the module/evolution maps, the main notes).
 >
-> **How to use this file.** Read **§A (current state)** + **§B (latent index)** + **§C (superseded)** first —
+> **How to use this file.** Read **§A (current state)** + **§B (latent index)** + **§C (superseded)** + the **§D module-authoring cookbook** first —
 > they are the *synthesis* and reflect reality as of 2026-06-27. The rest of the file is the **detailed
 > preservation corpus** (four exhaustive extractions, one per doc-group), kept verbatim so no fact is lost.
 > The source docs predate this session's breakthroughs, so where a source doc says something is "open/blocked",
@@ -148,6 +148,132 @@ The high-value "we figured this out, haven't used it" list. Each may unlock a fu
 
 > Still genuinely open (carried forward): in-game save-SWAP via `0xF3C00` (B1) was never tried productively;
 > the race engine (B4) is built-but-unwired; cold-load remains impossible (real-click automation is the answer).
+
+---
+
+## §D. MODULE AUTHORING COOKBOOK — build / adapt / integrate a custom AAU module
+
+> This is the self-contained recipe that makes **AI-authored custom modules** possible. The AAU trigger-module
+> binary format was undocumented (people sell "custom modules" because of that); we reverse-engineered it into a
+> proven codec + builder + id catalog. Given a desired behaviour, an AI can follow this section end-to-end to
+> produce a working module and wire it into our SSOT system — **without ever touching a card** (modules live in
+> `data/override/module/` and are injected in-memory at load by the reroute hook).
+>
+> Files: builder `system/app/module_authoring.py` · codec `system/app/module_format.py` · full id vocabulary
+> `system/docs/reference/MODULE_ID_CATALOG.md` (+ raw `system/catalogs/_expr_catalog.json`) · the 466 existing
+> modules (names+descriptions, for reuse/adaptation) `system/catalogs/module_catalog.md`.
+
+### D.1 Mental model (what a module IS)
+A module is a tree:
+```
+Module   = { name, description, triggers[] , globals[], dependencies[] }
+Trigger  = { name, events[] , vars[], guiActions[] }          # fires when ANY of its events occurs
+GUIAction= { action, subactions[] }                            # the If/then tree
+Action   = { id, params[] }                                    # "do something" (id from the ACTIONS table)
+Expression= { type, id, params[] }  | const(type,val) | var(type,name)   # "read a value / a condition"
+```
+- An **event** = WHEN the trigger fires (e.g. Room Change, H Ends, A Period Ends, Card Added).
+- A **condition** = an Expression returning BOOL, placed as the param of an **`If` action** (`AC_IF`); the If's
+  `subactions` run only when it's true. Nest `If`s / use `Logical And/Or` to combine.
+- An **action** = WHAT happens (move NPC, set Card Storage, set virtue, start H, add love points, …).
+- **You can only use EXISTING events/actions/expressions** — the engine has no new verbs. The full menu is the
+  id catalog; that menu is large enough for almost anything (see ACTIONS 1–65, EXPRESSIONS per return-type).
+
+### D.2 The vocabulary (ids) — where to look
+- **EVENTS** (id = enum value): 6 Card Added("Init") · 7 A Period Ends · **16 Card Changes Room** · 22 H Ends ·
+  23 H Starts · 26 Relationship Points Changed · 27 Delayed Execution … (full list: MODULE_ID_CATALOG.md / corpus §3).
+- **ACTIONS** (id = 1-based): 2 If · **20 Make Npc Move to Room(seat,room)** · **24–27 Set Card Storage Int/Float/
+  String/Bool(seat,key,val)** · 28–31 Remove Card Storage · **32 Set Virtue** · 33 Set Trait · 51 Start H scene ·
+  12–16 Add Love/Like/Dislike/Hate/Points … (full list: MODULE_ID_CATALOG.md).
+- **EXPRESSIONS** (id = 1-based **within return type**; every type starts 1=Const 2=Var 3=Enum):
+  - →INT: **9 Triggering Card · 10 This Card · 55 Player Character · 97 Current Room(seat)** · 24 Get Card Storage
+    Int(seat,key,def) · 25 Virtue · 47 Days Passed · 49 Current Period · 121 Get Class Storage Int …
+  - →BOOL: **4 And · 5 Or · 8 Equal · 11 Not · 13 Not Equal** · 6 Greater · 24 Get Card Storage Bool(seat,key,def) …
+  - →FLOAT: 10 Get Card Storage Float. →STRING: 7 Get Card Storage String · 8 + (concat).
+- The verified constants are already in `module_authoring.py` (extend it as you use more ids).
+
+### D.3 Build from code (the proven workflow)
+Using `module_authoring.py` helpers (`const/var/expr`, shorthands `this_card/triggering_card/pc/current_room/
+eq/neq/land`, `action/gui/event/trigger/module`) + `module_format.encode`:
+```python
+import module_format as mf
+from module_authoring import (const, expr, action, gui, event, trigger, module,
+    this_card, triggering_card, pc, current_room, eq, neq, land,
+    AC_IF, AC_NPC_MOVE_ROOM, EX_INT_GET_CARDSTORAGE_INT, EX_BOOL_GET_CARDSTORAGE_BOOL, EV_ROOM_CHANGE)
+from module_format import T_INT, T_BOOL, T_STRING
+
+# WORKED EXAMPLE — the live, SSOT-gated Confinement (build_confinement_gated):
+def cardstorage_int(seat, key):   return expr(T_INT,  EX_INT_GET_CARDSTORAGE_INT,  seat, const(T_STRING,key), const(T_INT,0))
+def cardstorage_bool(seat, key):  return expr(T_BOOL, EX_BOOL_GET_CARDSTORAGE_BOOL, seat, const(T_STRING,key), const(T_BOOL,False))
+
+this = this_card()
+cond = land( land( eq(this, triggering_card()),          # I'm the one who moved
+                   cardstorage_bool(this,"confined") ),  # AND the SSOT flagged me confined
+             neq(current_room(this), cardstorage_int(this,"cell")) )  # AND I'm outside my cell
+move = gui(action(AC_NPC_MOVE_ROOM, this, cardstorage_int(this,"cell")))   # -> send me back to my cell
+trig = trigger("Confine", [event(EV_ROOM_CHANGE)], [ gui(action(AC_IF, cond), subs=[move]) ])
+m = module("Confinement", "SSOT-gated jail confinement: inert until Card Storage 'confined'=true.", [trig])
+
+data = mf.encode(m)
+assert mf.decode(data) == m and mf.encode(mf.decode(data)) == data    # self-roundtrip (REQUIRED)
+open(r"<world>\data\override\module\Confinement", "wb").write(data)    # name = file name, no extension
+```
+Key rules: a module's **file name = the module name, no extension**, in `data/override/module/`. The codec is
+byte-exact; the `assert` roundtrip is the first validation gate.
+
+### D.4 Adapt an existing module (often easier than from scratch)
+Any of the 466 modules can be a starting point: `m = mf.decode(open(path,'rb').read())` → it's a plain dict →
+edit (swap an action, change a threshold const, add a condition, retarget a room) → `mf.encode(m)` → write.
+Use `module_catalog.md` to find a module whose behaviour is close, decode it, and tweak. (Confinement was
+authored fresh because no existing module pinned an NPC to a node — but most behaviours have a near match.)
+
+### D.5 Integrate into OUR system (the part that makes it useful)
+A module on disk does nothing until it's (a) active on a char and (b) gated by our data. Two patterns:
+
+**(A) Value-gated DISPATCHER — the default, on-the-fly, card-free (PROVEN).**
+1. Build the module **gated on Card-Storage flags** (conditions use `Get Card Storage Bool/Int` like the
+   Confinement example). It is INERT until the flag is set, so it's safe to put on every char.
+2. The **reroute hook** (`module_reroute.lua`, on `AAUCardData::UpdateModules`) injects it in-memory on every
+   card at load (add its name to the `DISPATCHERS` list). Cards are never written.
+3. The **SSOT sets the flag**: `resolver.py` decides per char → `orchestrator.write_char_state` emits the
+   `@b:key=…;@i:key=…` Card-Storage flags into `_orch_char_state.flag` → `apply_state.lua` calls
+   `setCardStorage(seat,key,val)`. The module's "Get Card Storage" expression reads exactly that (the bridge
+   works). → change the flag (no reload) → the module branches to a different path next time its event fires.
+
+**(B) Direct behaviour module** (an existing AAU personality module, e.g. "Sex Addict"): the SSOT decides which
+chars should have it; the reroute hook injects it per char at load (structural — changing the *set* needs a
+re-load: KickCard+AddCard or a world (re)load). No stat-writing — the module's own behaviour produces the effect.
+
+### D.6 Validation ladder
+1. **Codec roundtrip** `decode(encode(m))==m` (in the build, mandatory).
+2. **Editor ground-truth** (optional): open the generated module in the AAU Trigger Editor — does it render the
+   intended If/then logic?
+3. **In-game**: inject via the hook, set the gating flag from the SSOT, observe the behaviour. The hook debug
+   log `jail/_orch_reroute_debug.flag` confirms injection; `apply_state` debug confirms the flag was set.
+
+### D.7 Constraints & gotchas (so the module actually works)
+- **Existing verbs only** — no new actions/events/expressions; pick from the catalog.
+- **Reactive, not preventive** — you react to an event (e.g. Room Change) and correct; there is no "block movement"
+  primitive (`m_forceAction` is not Lua-reachable; `Make Npc Move to Room` just sets `movementType=2;roomTarget`).
+- **PC self-exclusion** — gate NPC-only behaviours with `This Card != Player Character` (PC = seat with the green
+  "Pc" badge; behaviour modules on the PC are usually inert anyway).
+- **Cards are NEVER modified** — never splice a module onto a card file (corrupts the `AUSS` coupling); modules
+  live in `data/override/module/` and are applied at runtime.
+- **Flags are the SSOT→module channel** — Card Storage (`setCardStorage` ↔ "Get Card Storage" expression) is the
+  proven bridge; use it for anything the engine has no native value for. Vanilla stats = read-only input.
+- Trigger activation is bound to card load (`InitOnLoad`); a module added to an already-loaded char only activates
+  if added during the hook (before activation) — which the reroute hook does.
+
+### D.8 AI recipe (given a desired behaviour → a working, integrated module)
+1. **WHEN** — pick the event(s) (Room Change / H Ends / Period Ends / Card Added / Relationship Changed / …).
+2. **IF** — express the condition from expressions, AND-ed with the **SSOT flag** that should gate it
+   (`Get Card Storage Bool('<your_flag>')`), plus `This Card == Triggering Card` and PC-exclusion as needed.
+3. **DO** — pick the action(s) (move/Set Card Storage/Set Virtue/Start H/Add Points/…), nest under the `If`.
+4. **BUILD** with `module_authoring.py`, **encode**, **roundtrip-assert**, write to `data/override/module/<Name>`.
+5. **GATE** — add `<Name>` to the reroute hook's dispatcher list (or have the resolver select it per char); have
+   the resolver emit `@b:<your_flag>=1` for the chars who should get the behaviour; `apply_state` sets it.
+6. **VALIDATE** — roundtrip ✓, inject ✓ (hook log), flag set ✓ (apply log), behaviour ✓ (in-game).
+This is exactly the "custom module on demand" capability — now reproducible by any AI from this blueprint.
 
 ---
 

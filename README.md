@@ -85,7 +85,10 @@ MWA2_V0.x/
 See **`INSTALL.md`**. In short: copy the package anywhere → run **`Install.bat`** once (Python is bundled; it
 just checks the **.NET runtime**, which AA2's own PPeX needs anyway) → start with **`Play.bat`**.
 
-## Docs (currently German)
-- `system/docs/AA2_Jail_Projekt_Notizen.md` — design doc; **STATUS section at the top** = overview.
-- `system/docs/handovers/` — session handovers (latest: the reroute hook + stable id + SSOT re-key).
-- `system/docs/reference/` — module maps, the module/expression id catalog, specs.
+## Docs
+- **`system/docs/MASTER_BLUEPRINT.md`** — the all-knowledge reference: current state, a consolidated index of
+  every reverse-engineered-but-unused capability, what's superseded, and a **§D module-authoring cookbook**
+  (build / adapt / integrate a custom AAU trigger module end-to-end — the format was undocumented; this makes
+  AI-authored custom modules reproducible). Start here.
+- `system/docs/AA2_Jail_Projekt_Notizen.md` (German) — the historical design doc; **STATUS head** = overview.
+- `system/docs/handovers/` — session handovers. `system/docs/reference/` — module maps + id catalog + specs.
