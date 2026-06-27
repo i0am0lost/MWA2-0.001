@@ -126,6 +126,24 @@ The high-value "we figured this out, haven't used it" list. Each may unlock a fu
   for shared heavy data → Lua patches → patched `PPeXM64` with original backup → custom modules + assets + save
   templates → DB → config). **jail-night-only** (`on.period`-hold), **node-blocking progressive dungeon**, reskin.
 
+### B6. Day-phase machine & end-day resolver (notes §3.2 / §3.3 — partly solved, partly latent)
+- **Phase sequence is data-driven / variable, NOT a rigid 1..10** — a live `4→7` skip was logged (phases 5 sports +
+  6 2nd-break skipped) with timewarp disabled = the vanilla engine. So per-world rhythms (e.g. a "single-phase jail")
+  are realizable through the phase system. Clean lever = `timewarp.lua` = the `on.period(new,old)` set-hook (see B3).
+- **[LATENT] controllability indicators (user-observed, unverified — `CurrentPeriod`-on-Sunday log not yet run):**
+  (a) **Sunday** reportedly has a different phase count/structure than a schoolday → "different phase schemata"
+  already exist internally; (b) **Dates** consume more time / modify day-flow at runtime (by action, not weekday) →
+  smells like a controllable mechanism; (c) **Vanilla Ver.6 patch** added control for **PC/NPC movement speed, field
+  speed, and "set end time"** — a real engine-exposed time/speed lever, never exploited.
+- **[LATENT] End-day resolver plan (notes §3.2, designed but unbuilt):** trigger polls `CurrentPeriod`; on transition
+  (8/10) writes a flag (Card Storage / Global Var) *or* the save modification-timestamp flips → a Python watcher reads
+  it → runs transfer + background-reload of the hidden instance. **Needs an exactly-once-per-day guard** (set/reset a
+  flag, else it double-fires). **Engine-independent fallback:** Python file-watcher on the save's modification-timestamp
+  (flips on sleep) — coarser, but needs no engine hook at all.
+- **Teleport redirect is reactive-catchable** — let phases tick, intercept every unwanted room-change ("PC in
+  jail-world? → send back") = the jailer principle applied to the PC; player sees a continuous jail phase though
+  phases run internally.
+
 ---
 
 ## §C. SUPERSEDED / RESOLVED — source docs say "open", but it's solved (don't chase)
@@ -843,7 +861,9 @@ Intro · Verifizierte Trigger-Bausteine · STUFE 1 — MVP · STUFE 2 — generi
 - **Module-format codec (`module_format.py`):** 932 files byte-exact decode+encode.
 - **SSOT→Card-Storage bridge proven (Python/Lua side):** `confine` → `memory.db` → resolver → `char_state.flag` with `@b:confined=1;@i:cell=39` → apply_state calls `setCardStorage` (apply_debug shows `applied: Shimizu Airi{@b:confined=1;@i:cell=39}`). Bridge is NOT the problem — only its target (cause A).
 - **Auto-Confine:** Orchestrator confines all jail-residents (Shimizu Airi, Stage Luka, Takagi Saya) to 39.
-- **Confinement module** generated (Stage-1 + Init, 516 B). jail-only.
+- **Confinement module** generated (Stage-1 + Init, 516 B in this doc's build). jail-only. *(NB: the byte-exact final
+  Confinement module is **436 B** per HANDOVER_module_format_RE / CONFINEMENT_SPEC — the 516 B figure is this earlier
+  Stage-1+Init build; treat 436 B as current.)*
 - **PPeX is irrelevant** for confinement (streams assets only, never touches Card Storage / logic).
 - **`AA2QtEdit.exe`** = standalone card editor (maintains AUSS safely; no PPeX needed).
 - AAU source via WebFetch (raw.githubusercontent.com); `gh` missing in Bash PATH.
@@ -1386,11 +1406,11 @@ Per function: SEXUAL 75, PERSONALITY 113, RELATIONSHIP 69, STATUS_ROLE 30, STATS
 
 Per evo_role: **TARGET 104, GATE 13, SOURCE 316, NONE 33**.
 
-Per developable: **yes 259** (the rule-candidate pool), innate 154, gate 6, system 47.
+Per developable: **yes 259** (the rule-candidate pool), innate 154, gate 6, system 47. Uncertain (flagged for joint review): **12**.
 
 The 6 explicit `gate` (role/milestone, NOT counter-driven): **Jailer, Detective, Banchou, Club Leader, Marriage, Killer**.
 
-Race subsystem: 24 races × 7 modules = **168 race-subsystem modules** (1 Race + 1 Bias + 1 Prejudice + 3 Hostile families + 1 Obsession); 24 innate (DESIGNATION) + 144 developable.
+Race subsystem: 24 races × 7 modules = **168 race-subsystem modules** (1 Race + 1 Bias + 1 Prejudice + 3 Hostile families + 1 Obsession); 24 innate (DESIGNATION) + 144 developable; **72 HOSTILE-family rows** (24 races × 3 tiers).
 
 ## 1.C Facts — the canonical TARGET outcomes (notable modules called out as evolution endpoints)
 
