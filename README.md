@@ -6,73 +6,86 @@ generally, a framework for **multiple pre-loaded game worlds** with **instant sw
 that remembers each character's developed state and relationships across worlds (Sims-style: a
 relationship survives even while the other character is "away" in another world).
 
-> This repo contains **project tooling only** (mods, a Python orchestrator, the DB, docs) — **not** the
-> ~21 GB game installs or saves (see `.gitignore`). Paths are derived at runtime, so it's portable.
+> **This repo is the SOURCE** (mods, the Python layer, docs, catalogs). The **runnable package**
+> (`MWA2_V0.x/`) additionally ships the two game worlds, a bundled Python, and the patched PPeX server —
+> those are excluded from git (see `.gitignore`) and distributed as a copy-and-run folder. Everything
+> resolves at runtime relative to the package, so it's fully portable.
 
 ## What this really is — and why it replicates
 This isn't "a jail mod". It's a **generic multi-world extension** for AA2. **"Jail" is just the first
-instance** — the proof of concept. The expensive part is built **once**: the engine workarounds (two
-pre-loaded instances, instant switch via window-hide + process-suspend, the patched multi-client PPeX
-server, the single-instance-mutex bypass, the menu-load path), plus the **interaction-triggered transfer**
-and the **SSOT memory layer**.
+instance.** The expensive part is built **once**: the engine workarounds (two pre-loaded instances, instant
+switch via window-hide + process-suspend, the patched multi-client PPeX server, the single-instance-mutex
+bypass, the menu-load path), plus the **interaction-triggered transfer** and the **SSOT memory layer**.
 
 After that, **each additional world (Resort, Beach, Apartment, …) is mostly a config entry + a reskin** —
-*"worlds as config, not hardcoded"*: switch / transfer / memory are all parametrized by world-ID. So **if
-it works, it replicates almost for free.**
+*"worlds as config, not hardcoded"*. And the payoff is **emergent, not hand-coded**: a character develops
+differently in different worlds, and AA2's own compatibility engine turns the divergence into friction/drama
+**by itself** — you only have to transfer the diverged state correctly (the SSOT does that).
 
-And the payoff is **emergent, not hand-coded**: a character develops differently in different worlds — e.g.
-one comes back with high virtue while the one who stayed dropped low — and AA2's own compatibility engine
-sees the divergence and produces friction/drama **by itself**. You only have to transfer the diverged
-values correctly (the SSOT/relationship memory does that).
+## Core principle: cards are never modified; the SSOT is the brain
+Character cards are **pristine, shareable base data** — we **never write to them** (a single changed bit
+breaks the card for someone without our mod). **All of our state lives externally in the SSOT** (one
+`memory.db` per playthrough). At runtime:
 
-**Honest boundary (hard engine limits):** every world is the *same* AA2 map, reskinned + nodes gated — a
-"Beach" is the school map with beach textures, not new geometry; the same action vocabulary everywhere.
-It is *"the same social simulation in another place, dressed and populated differently"* — which is exactly
-the point, and what makes it replicable.
+- **Identity** is a stable, rename-proof id linked to the **base card** (not the name, never the seat). The
+  active roster is rebuilt from the SSOT, so the same base card can be a *different* evolved character in
+  different playthroughs; a character that leaves the roster keeps its data "on ice" and gets it back on return.
+- **Modules are injected in-memory at load** by a runtime hook on AAU's own `AAUCardData::UpdateModules`
+  (the card file is untouched). The hook reads each card's module list, then applies **our** SSOT-decided set.
+- **Behaviour is value/flag-driven, on-the-fly:** always-loaded **dispatcher modules** read SSOT-set
+  **Card-Storage flags** and branch — so a character's behaviour changes the moment we change a flag, no
+  reload, no card edit. Vanilla stats (virtue, …) are **read-only input** we tap into the SSOT, never a write
+  target — to make "high virtue → chaste" we activate the *behaviour module*, we don't hijack the stat.
 
-## Where it stands (late 2026-06-24)
-**Foundation (done, proven live):**
-- Instant switch between two pre-loaded worlds (patched multi-client PPeX server, AA2 single-instance
-  mutex bypass, inactive world hidden + process-suspended → no sound/CPU, instant resume).
-- One entry point (`run_orchestrator.bat`): starts the server + both worlds, world label + in-game
-  switch button, save-coupling (each school save ↔ its own jail twin), robust shutdown.
-- Reverse-engineered the load path: there is **no callable cold-loader** → the only crash-free load is
-  the game's own menu-load, automated once at boot (RE notes in `_re/RE_LADEFUNKTION.md`).
+## Where it stands (2026-06-27) — proven live
+- ✅ **Instant two-world switch** (patched multi-client PPeX, mutex bypass, hide+suspend), one orchestrator,
+  save-coupling, robust shutdown.
+- ✅ **Transfer school → jail**: dominance combo → enslave → commit-on-save → derive jail roster; KickCard/
+  AddCard; self-values + relationship memory injected.
+- ✅ **AAU module binary format fully reverse-engineered** — a proven decode/encode codec; module builder.
+- ✅ **The reroute hook** on `UpdateModules` — injects modules in-memory (cards pristine); native `AddModule`
+  via a binary hook. Confinement proven in-game with zero card editing.
+- ✅ **Stable id + SSOT re-key** — rename-proof identity; the memory DB + API keyed by it.
+- ✅ **Value-gated dispatcher + Card-Storage bridge** — the gated Confinement module reads an SSOT flag set by
+  `apply_state` and confines on its own: the whole value-driven evolution mechanism, proven, card-free.
 
-**Transfer school → jail (the hard part — working):**
-- Dominance combo (`INSULT → FIGHT → FORCE_H`) enslaves a target. Transfer is **commit-on-save**:
-  saving in school commits it to a per-day journal; the orchestrator derives jail's roster from it.
-- A char materializes in jail via **KickCard** (remove from school) + **AddCard** (add to jail) — both
-  proven live. Its **developed self-values** (virtue/intelligence/strength/sociability) are injected.
-- **Relationship memory**: a full relationship graph is snapshotted continuously into the SSOT
-  (`char_rels`), so relationships are remembered before any transfer and reactivated when both chars
-  are co-present again. Confirmed building live.
-- **Module catalog**: all 466 AAU modules scanned to `module_catalog.json` (name + description).
+**Next:** wire base-card → id at roster-build (incl. school-side card detection); build the evolution rules as
+gated dispatchers (status / race-attitude / loneliness / training→transformation); calibrate thresholds.
 
-**Next:** a card **module editor** (the AAU module list lives in a clean `aaUd` PNG chunk — feasibility
-confirmed) driven by a state→module map (e.g. corrupted → "Sex Addict"); a return path (jail → school);
-jail world mechanics (reactive node-blocking → progressive dungeon; night-only phase; reskin); an RPG
-layer (activity DB, status modules, loneliness from social wealth).
+**Hard engine limits (worked around, not removed):** 25-character roster cap, same AA2 map everywhere
+(reskin + node-gating, no new geometry/verbs), no callable cold-loader (menu automation), live-reload crashes
+(kill+restart), trigger *activation* is bound to card load (so on-the-fly = value-branch in an always-loaded
+dispatcher, or a targeted KickCard/AddCard re-load).
 
-**Hard engine limits (worked around, not removed):** 25-character roster cap, no new map geometry, no
-new action verbs, no callable cold-loader (menu automation), live-reload crashes (kill+restart),
-module list not writable from Lua at runtime (→ external card edit at the day boundary).
+## Layout
+```
+MWA2_V0.x/
+├─ Play.bat   Create Characters.bat   Memory Tool.bat   Install.bat
+├─ school/   jail/                 # game worlds (AA2 install + our AAUnlimited mods)
+└─ system/
+   ├─ python/        # bundled Python 3.12
+   ├─ app/           # orchestrator + SSOT/memory + module codec + card tools
+   ├─ ppex/   mutexfind/           # patched multi-client PPeX + multi-instance helper
+   ├─ catalogs/      # module + expression catalogs
+   └─ docs/  ├─ handovers/  └─ reference/
+```
 
-## Components
-- `orchestrator.py` — runtime orchestrator (stdlib + ctypes only): server, worlds, switch, coupling,
-  the SSOT transfer pipeline (commit-on-save → day-keyed journal → derive-on-load).
-- `playthrough_db.py` — per-playthrough SQLite long-term memory: `transfers`, `char_rels`, `world_state`.
-- `module_scan.py` → `module_catalog.json`/`.md` — catalog of all AAU modules.
-- **Custom Lua mods** (in `school|jail/AAUnlimited/mod/`): `master_slave` (combo → slave), `jail_intake`
-  (rebuild jail roster from the SSOT: KickCard + AddCard + value/relationship injection), `rel_snapshot`
-  (continuous relationship memory), `logperiod` (day/phase flag), `orch_savename` (save-name flag).
+## Components (`system/app/`)
+- `orchestrator.py` — runtime orchestrator: PPeX server, both worlds, switch, save-coupling, and the SSOT
+  pipeline (commit-on-save → day-keyed journal → derive-on-load → resolver → per-char flags).
+- `playthrough_db.py` — per-playthrough SQLite long-term memory (chars/rels/activity/state/confine), keyed by
+  the stable id. `resolver.py` — turns the DBs into each char's active modules + Card-Storage flags.
+- `module_format.py` / `module_authoring.py` — the AAU module codec + builder (e.g. the gated Confinement).
+- `card_edit.py` / `card_globals.py` — read-only card inspection (cards are never written by the pipeline).
+- **Lua mods** (`school|jail/AAUnlimited/mod/`): `module_reroute` (the in-memory hook), `apply_state` (sets the
+  SSOT Card-Storage flags), `jail_intake` (rebuild roster from the SSOT), `master_slave`, `rel_snapshot`,
+  `activity_snapshot`, `logperiod`, `orch_savename`.
 
-## Detailed working docs (currently German)
-The deep design/state/RE notes are in German — ping me if you want them translated:
-- `AA2_Jail_Projekt_Notizen.md` — design doc; **STATUS section at the top** = overview (done / in progress / planned).
-- `HANDOVER_transfer_2026-06-24.md` — current build state in detail.
-- `HANDOVER_*` / `_re/RE_LADEFUNKTION.md` — coupling, combo trigger, reverse engineering.
+## Install & run (Windows)
+See **`INSTALL.md`**. In short: copy the package anywhere → run **`Install.bat`** once (Python is bundled; it
+just checks the **.NET runtime**, which AA2's own PPeX needs anyway) → start with **`Play.bat`**.
 
-## Run (local, Windows)
-`run_orchestrator.bat` (as admin). Needs Python 3.12 and an existing AA2/AAUnlimited install placed as
-`school/` and `jail/` siblings of these files.
+## Docs (currently German)
+- `system/docs/AA2_Jail_Projekt_Notizen.md` — design doc; **STATUS section at the top** = overview.
+- `system/docs/handovers/` — session handovers (latest: the reroute hook + stable id + SSOT re-key).
+- `system/docs/reference/` — module maps, the module/expression id catalog, specs.
