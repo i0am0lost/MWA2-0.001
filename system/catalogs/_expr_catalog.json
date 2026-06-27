@@ -1,0 +1,1681 @@
+{
+ "INVALID": [
+  [
+   1,
+   "Constant",
+   []
+  ],
+  [
+   2,
+   "Variable",
+   []
+  ],
+  [
+   3,
+   "Enumeration",
+   []
+  ]
+ ],
+ "INT": [
+  [
+   1,
+   "Constant",
+   []
+  ],
+  [
+   2,
+   "Variable",
+   []
+  ],
+  [
+   3,
+   "Enumeration",
+   []
+  ],
+  [
+   4,
+   "Random Int",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   5,
+   "+",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   6,
+   "-",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   7,
+   "/",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   8,
+   "*",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   9,
+   "Triggering Card",
+   []
+  ],
+  [
+   10,
+   "This Card",
+   []
+  ],
+  [
+   11,
+   "Npc Answer - Target",
+   []
+  ],
+  [
+   12,
+   "Npc Answer - Conversation ID",
+   []
+  ],
+  [
+   13,
+   "Npc Room Target",
+   []
+  ],
+  [
+   14,
+   "Npc Action",
+   []
+  ],
+  [
+   15,
+   "Npc Talk Target",
+   []
+  ],
+  [
+   16,
+   "Npc Talk About",
+   []
+  ],
+  [
+   17,
+   "Period - Starting",
+   []
+  ],
+  [
+   18,
+   "Period - Ending",
+   []
+  ],
+  [
+   19,
+   "Love Points",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   20,
+   "Like Points",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   22,
+   "Hate Points",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   23,
+   "Float to Int",
+   [
+    "FLOAT"
+   ]
+  ],
+  [
+   24,
+   "Get Card Storage Int",
+   [
+    "INT",
+    "STRING",
+    "INT"
+   ]
+  ],
+  [
+   25,
+   "Virtue",
+   [
+    "INT"
+   ]
+  ],
+  [
+   26,
+   "Personality",
+   [
+    "INT"
+   ]
+  ],
+  [
+   27,
+   "Voice Pitch",
+   [
+    "INT"
+   ]
+  ],
+  [
+   28,
+   "Club",
+   [
+    "INT"
+   ]
+  ],
+  [
+   29,
+   "Club Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   30,
+   "Club Rank",
+   [
+    "INT"
+   ]
+  ],
+  [
+   31,
+   "Intelligence",
+   [
+    "INT"
+   ]
+  ],
+  [
+   32,
+   "Intelligence Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   33,
+   "Intelligence Rank",
+   [
+    "INT"
+   ]
+  ],
+  [
+   34,
+   "Strength",
+   [
+    "INT"
+   ]
+  ],
+  [
+   35,
+   "Strength Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   36,
+   "Strength Rank",
+   [
+    "INT"
+   ]
+  ],
+  [
+   37,
+   "Sociability",
+   [
+    "INT"
+   ]
+  ],
+  [
+   38,
+   "Partner Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   39,
+   "Npc Original Response Chance",
+   []
+  ],
+  [
+   40,
+   "Npc Current Response Chance",
+   []
+  ],
+  [
+   41,
+   "Sex Orientation",
+   [
+    "INT"
+   ]
+  ],
+  [
+   42,
+   "String Length",
+   [
+    "STRING"
+   ]
+  ],
+  [
+   43,
+   "First Index Of",
+   [
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   44,
+   "String to Int",
+   [
+    "STRING"
+   ]
+  ],
+  [
+   45,
+   "First Index Of Starting At",
+   [
+    "STRING",
+    "STRING",
+    "INT"
+   ]
+  ],
+  [
+   46,
+   "Gender",
+   [
+    "INT"
+   ]
+  ],
+  [
+   47,
+   "Days Passed",
+   []
+  ],
+  [
+   48,
+   "Current Day",
+   []
+  ],
+  [
+   49,
+   "Current Period",
+   []
+  ],
+  [
+   50,
+   "Pregnancy Risk",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   51,
+   "Current Style",
+   [
+    "INT"
+   ]
+  ],
+  [
+   52,
+   "State",
+   []
+  ],
+  [
+   53,
+   "Actor",
+   [
+    "INT"
+   ]
+  ],
+  [
+   54,
+   "NPC Response",
+   []
+  ],
+  [
+   55,
+   "Player Character",
+   []
+  ],
+  [
+   56,
+   "Find Seat",
+   [
+    "STRING"
+   ]
+  ],
+  [
+   57,
+   "Reject Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   58,
+   "Win Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   59,
+   "Victory Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   60,
+   "Skip Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   61,
+   "PC Original Response",
+   []
+  ],
+  [
+   62,
+   "Conversation ID",
+   []
+  ],
+  [
+   63,
+   "Event ID",
+   []
+  ],
+  [
+   64,
+   "Find Style",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   65,
+   "Get Mood Strength",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   66,
+   "Get Strongest Mood",
+   [
+    "INT"
+   ]
+  ],
+  [
+   67,
+   "Get H compatibility",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   68,
+   "Get NPC Status",
+   [
+    "INT"
+   ]
+  ],
+  [
+   69,
+   "Answer Action",
+   []
+  ],
+  [
+   70,
+   "Is Answering",
+   []
+  ],
+  [
+   71,
+   "Cum Stat - Vaginal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   72,
+   "Cum Stat - Anal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   73,
+   "Cum Stat - Oral",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   74,
+   "Cum Stat - Total Vaginal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   75,
+   "Cum Stat - Total Anal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   76,
+   "Cum Stat - Total Oral",
+   [
+    "INT"
+   ]
+  ],
+  [
+   77,
+   "Cum Stat - All",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   78,
+   "Cum Stat - Total All",
+   [
+    "INT"
+   ]
+  ],
+  [
+   79,
+   "Climax Stat - Single",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   80,
+   "Climax Stat - Total Single",
+   [
+    "INT"
+   ]
+  ],
+  [
+   81,
+   "Climax Stat - Simultaneous",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   82,
+   "Climax Stat - Total Simultaneous",
+   [
+    "INT"
+   ]
+  ],
+  [
+   83,
+   "H Stat - Condoms Used",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   84,
+   "H Stat - Total Condoms Used",
+   [
+    "INT"
+   ]
+  ],
+  [
+   85,
+   "H Stat - Vaginal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   86,
+   "H Stat - Total Vaginal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   87,
+   "H Stat - Anal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   88,
+   "H Stat - Total Anal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   89,
+   "H Stat - All",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   90,
+   "H Stat - Total All",
+   [
+    "INT"
+   ]
+  ],
+  [
+   91,
+   "Cum Stat - Risky",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   92,
+   "Cum Stat - Total Risky",
+   [
+    "INT"
+   ]
+  ],
+  [
+   93,
+   "Locked state",
+   [
+    "INT"
+   ]
+  ],
+  [
+   94,
+   "FapState",
+   [
+    "INT"
+   ]
+  ],
+  [
+   95,
+   "Cherry Status",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   96,
+   "Line",
+   []
+  ],
+  [
+   97,
+   "Current Room",
+   [
+    "INT"
+   ]
+  ],
+  [
+   98,
+   "Get PC TalkAbout",
+   []
+  ],
+  [
+   99,
+   "INVALID",
+   []
+  ],
+  [
+   101,
+   "Npc Current Response",
+   []
+  ],
+  [
+   102,
+   "Key pressed",
+   []
+  ],
+  [
+   103,
+   "Get Target",
+   [
+    "INT"
+   ]
+  ],
+  [
+   104,
+   "Current Conversation",
+   [
+    "INT"
+   ]
+  ],
+  [
+   105,
+   "H Position",
+   []
+  ],
+  [
+   106,
+   "Get Height",
+   [
+    "INT"
+   ]
+  ],
+  [
+   107,
+   "Active actor",
+   []
+  ],
+  [
+   108,
+   "Passive actor",
+   []
+  ],
+  [
+   109,
+   "PC Effective Response",
+   []
+  ],
+  [
+   110,
+   "Npc Effective Response Chance",
+   []
+  ],
+  [
+   111,
+   "Get Figure",
+   [
+    "INT"
+   ]
+  ],
+  [
+   112,
+   "Get Opinion",
+   [
+    "INT",
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   113,
+   "Get Breast Size",
+   [
+    "INT"
+   ]
+  ],
+  [
+   114,
+   "Get Decals",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   115,
+   "Action About Room",
+   [
+    "INT"
+   ]
+  ],
+  [
+   116,
+   "Fighting Stance",
+   [
+    "INT"
+   ]
+  ],
+  [
+   117,
+   "Dominant actor",
+   []
+  ],
+  [
+   118,
+   "Submissive actor",
+   []
+  ],
+  [
+   119,
+   "Get Stamina",
+   [
+    "INT"
+   ]
+  ],
+  [
+   120,
+   "Get Period Timer",
+   []
+  ],
+  [
+   121,
+   "Get Class Storage Int",
+   [
+    "STRING",
+    "INT"
+   ]
+  ],
+  [
+   122,
+   "Get PC Target",
+   []
+  ],
+  [
+   123,
+   "Virtue Modifier",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   124,
+   "Real Virtue",
+   [
+    "INT"
+   ]
+  ],
+  [
+   125,
+   "Sociability Modifier",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   126,
+   "Real Sociability",
+   [
+    "INT"
+   ]
+  ],
+  [
+   127,
+   "Intelligence Modifier",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   128,
+   "Real Intelligence Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   129,
+   "Strength Modifier",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   130,
+   "Real Strength Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   131,
+   "Club Modifier",
+   [
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   132,
+   "Real Club Value",
+   [
+    "INT"
+   ]
+  ],
+  [
+   133,
+   "Get LocationTarget",
+   [
+    "INT"
+   ]
+  ],
+  [
+   134,
+   "Npc Strong Response Modifier",
+   []
+  ],
+  [
+   135,
+   "Npc Absolute Response Modifier",
+   []
+  ],
+  [
+   136,
+   "Get PC Room Target",
+   []
+  ],
+  [
+   137,
+   "Trait Modifier",
+   [
+    "INT",
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   138,
+   "Unbount Trait Value",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   139,
+   "Get Current Outfit",
+   [
+    "INT"
+   ]
+  ],
+  [
+   140,
+   "Get lover days",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   141,
+   "Get Sports Exam Grade",
+   [
+    "INT"
+   ]
+  ],
+  [
+   142,
+   "Get Academic Exam Grade",
+   [
+    "INT"
+   ]
+  ],
+  [
+   143,
+   "Get Club Exam Grade",
+   [
+    "INT"
+   ]
+  ],
+  [
+   144,
+   "Sexual Partner Count",
+   [
+    "INT"
+   ]
+  ],
+  [
+   145,
+   "Club Type",
+   [
+    "INT"
+   ]
+  ],
+  [
+   146,
+   "Get Love",
+   []
+  ],
+  [
+   147,
+   "Get Like",
+   []
+  ],
+  [
+   148,
+   "Get Dislike",
+   []
+  ],
+  [
+   149,
+   "Get Hate",
+   []
+  ],
+  [
+   150,
+   "Relationship Points Changed Towards",
+   []
+  ],
+  [
+   151,
+   "Get Delayed Event's Period",
+   []
+  ],
+  [
+   153,
+   "Get Skirt State",
+   [
+    "INT"
+   ]
+  ]
+ ],
+ "?": [
+  [
+   21,
+   "Dislike Points",
+   []
+  ],
+  [
+   15,
+   "Npc Normal Response Success",
+   []
+  ]
+ ],
+ "BOOL": [
+  [
+   100,
+   "Npc Original Response",
+   []
+  ],
+  [
+   1,
+   "Constant",
+   []
+  ],
+  [
+   2,
+   "Variable",
+   []
+  ],
+  [
+   3,
+   "Enumeration",
+   []
+  ],
+  [
+   4,
+   "Logical And",
+   [
+    "BOOL",
+    "BOOL"
+   ]
+  ],
+  [
+   5,
+   "Logical Or",
+   [
+    "BOOL",
+    "BOOL"
+   ]
+  ],
+  [
+   6,
+   "Greater Than",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   7,
+   "Greater Than or Equal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   8,
+   "Equal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   9,
+   "Less Than or Equal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   10,
+   "Less Than",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   11,
+   "Not",
+   [
+    "BOOL"
+   ]
+  ],
+  [
+   12,
+   "String - Equal",
+   [
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   13,
+   "Not Equal",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   14,
+   "Npc Original Response Success",
+   []
+  ],
+  [
+   16,
+   "Is Seat Filled",
+   [
+    "INT"
+   ]
+  ],
+  [
+   17,
+   "Is Lover",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   18,
+   "Greater Than",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   19,
+   "Greater Than or Equal",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   20,
+   "Equal",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   21,
+   "Less Than or Equal",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   22,
+   "Less Than",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   23,
+   "Not Equal",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   24,
+   "Get Card Storage Bool",
+   [
+    "INT",
+    "STRING",
+    "BOOL"
+   ]
+  ],
+  [
+   25,
+   "Trait",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   26,
+   "Check Interruption Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   27,
+   "Check Minna Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   28,
+   "Check Force Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   29,
+   "Check Sex Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   30,
+   "Check NoPrompt Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   31,
+   "Check Game Over Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   32,
+   "Check No Target Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   33,
+   "Roll Float",
+   [
+    "FLOAT"
+   ]
+  ],
+  [
+   34,
+   "Roll Int",
+   [
+    "INT"
+   ]
+  ],
+  [
+   35,
+   "Sex Experience: Vaginal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   36,
+   "Sex Experience: Anal",
+   [
+    "INT"
+   ]
+  ],
+  [
+   37,
+   "Has Lovers",
+   [
+    "INT"
+   ]
+  ],
+  [
+   38,
+   "Get Auto-PC",
+   []
+  ],
+  [
+   39,
+   "Get Cum",
+   [
+    "INT"
+   ]
+  ],
+  [
+   40,
+   "Get Tears",
+   [
+    "INT"
+   ]
+  ],
+  [
+   41,
+   "Get Highlight",
+   [
+    "INT"
+   ]
+  ],
+  [
+   42,
+   "Get Glasses",
+   [
+    "INT"
+   ]
+  ],
+  [
+   43,
+   "Pose exists",
+   [
+    "STRING"
+   ]
+  ],
+  [
+   44,
+   "Npc Effective Response Success",
+   []
+  ],
+  [
+   45,
+   "Get H Preference",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   46,
+   "Get Class Storage Bool",
+   [
+    "STRING",
+    "BOOL"
+   ]
+  ],
+  [
+   47,
+   "Check Skip Action",
+   [
+    "INT"
+   ]
+  ],
+  [
+   48,
+   "Check Private Room",
+   [
+    "INT"
+   ]
+  ],
+  [
+   49,
+   "Has Date With",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   50,
+   "Promised a Lewd Reward To",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   51,
+   "Get Delayed Event Required",
+   []
+  ],
+  [
+   53,
+   "Get Condom-Override",
+   []
+  ],
+  [
+   54,
+   "Get Condom-Value",
+   []
+  ]
+ ],
+ "FLOAT": [
+  [
+   1,
+   "Constant",
+   []
+  ],
+  [
+   2,
+   "Variable",
+   []
+  ],
+  [
+   3,
+   "Enumeration",
+   []
+  ],
+  [
+   4,
+   "Random Float",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   5,
+   "+",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   6,
+   "-",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   7,
+   "/",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   8,
+   "*",
+   [
+    "FLOAT",
+    "FLOAT"
+   ]
+  ],
+  [
+   9,
+   "Int to Float",
+   [
+    "INT"
+   ]
+  ],
+  [
+   10,
+   "Get Card Storage Float",
+   [
+    "INT",
+    "STRING",
+    "FLOAT"
+   ]
+  ],
+  [
+   11,
+   "String to Float",
+   [
+    "STRING"
+   ]
+  ],
+  [
+   12,
+   "Sex Orientation Multiplier",
+   [
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   13,
+   "Get Class Storage Float",
+   [
+    "STRING",
+    "FLOAT"
+   ]
+  ],
+  [
+   14,
+   "Like Orientation Multiplier",
+   [
+    "INT",
+    "INT"
+   ]
+  ]
+ ],
+ "STRING": [
+  [
+   1,
+   "Constant",
+   []
+  ],
+  [
+   2,
+   "Variable",
+   []
+  ],
+  [
+   3,
+   "Enumeration",
+   []
+  ],
+  [
+   4,
+   "Substring",
+   [
+    "STRING",
+    "INT",
+    "INT"
+   ]
+  ],
+  [
+   5,
+   "Last Name",
+   [
+    "INT"
+   ]
+  ],
+  [
+   6,
+   "First Name",
+   [
+    "INT"
+   ]
+  ],
+  [
+   7,
+   "Get Card Storage String",
+   [
+    "INT",
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   8,
+   "+",
+   [
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   9,
+   "Int to String",
+   [
+    "INT"
+   ]
+  ],
+  [
+   10,
+   "Float to String",
+   [
+    "FLOAT"
+   ]
+  ],
+  [
+   11,
+   "Bool to String",
+   [
+    "BOOL"
+   ]
+  ],
+  [
+   12,
+   "Description",
+   [
+    "INT"
+   ]
+  ],
+  [
+   13,
+   "Replace substring",
+   [
+    "INT",
+    "INT",
+    "INT",
+    "STRING"
+   ]
+  ],
+  [
+   14,
+   "Last Sex Partner",
+   [
+    "INT"
+   ]
+  ],
+  [
+   15,
+   "First Sex Partner",
+   [
+    "INT"
+   ]
+  ],
+  [
+   16,
+   "First Anal Partner",
+   [
+    "INT"
+   ]
+  ],
+  [
+   17,
+   "Item - Lover's",
+   [
+    "INT"
+   ]
+  ],
+  [
+   18,
+   "Item - Friend's",
+   [
+    "INT"
+   ]
+  ],
+  [
+   19,
+   "Item - Sexual",
+   [
+    "INT"
+   ]
+  ],
+  [
+   20,
+   "Full Name",
+   [
+    "INT"
+   ]
+  ],
+  [
+   21,
+   "LUA Add Parameter",
+   [
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   22,
+   "Get Class Storage String",
+   [
+    "STRING",
+    "STRING"
+   ]
+  ],
+  [
+   23,
+   "Get Delayed Event Label",
+   []
+  ],
+  [
+   24,
+   "Get comma separated value by index",
+   [
+    "STRING",
+    "INT",
+    "STRING"
+   ]
+  ]
+ ]
+}

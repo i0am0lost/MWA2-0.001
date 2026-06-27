@@ -1,0 +1,39 @@
+# =============================================================================
+#  MWA2 — source repo .gitignore
+#  This repo tracks the SOURCE (our Python, mods, docs, catalogs). The RUNNABLE
+#  PACKAGE (game worlds + bundled Python + PPeX) is assembled by copy, not git.
+#  Our mod files inside the worlds are tracked EXPLICITLY via `git add -f`.
+# =============================================================================
+
+# --- Game worlds (tens of GB) — our mods inside are force-added ---------------
+/school/
+/jail/
+
+# --- Bundled runtime + build outputs (large binaries; shipped, not committed) -
+/system/python/
+/system/ppex/
+/system/mutexfind/
+
+# --- Runtime state / saves / per-playthrough data ----------------------------
+/_playthroughs/
+/_backup/
+*.flag
+*.sav
+*.json.tmp
+_ppex_server.log
+
+# --- Build artifacts ---------------------------------------------------------
+**/bin/
+**/obj/
+**/Backup/
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.pyc
+
+# --- Editor / OS / tooling ---------------------------------------------------
+.vs/
+*.user
+Thumbs.db
+desktop.ini
+.claude/

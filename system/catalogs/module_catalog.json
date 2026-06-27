@@ -1,0 +1,3264 @@
+[
+ {
+  "name": "#MeToo",
+  "description": "Has a chance to revoke consent during sex. [PC/NPC Module]",
+  "file": "#MeToo",
+  "size": 5256,
+  "trigger_bytes": 5120
+ },
+ {
+  "name": "Abstinent",
+  "description": "Will not consent to sex until marriage. [NPC Only Module]",
+  "file": "Abstinent",
+  "size": 1307,
+  "trigger_bytes": 1167
+ },
+ {
+  "name": "Accommodating",
+  "description": "Lets the NPC take charge during sex if they had asked for it. [PC Only Module]",
+  "file": "Accommodating",
+  "size": 2299,
+  "trigger_bytes": 2109
+ },
+ {
+  "name": "Adaptive",
+  "description": "Depending on their compatibility, gradually copies new H Preferences from their lovers. [PC/NPC Module]",
+  "file": "Adaptive",
+  "size": 2793,
+  "trigger_bytes": 2563
+ },
+ {
+  "name": "Admires Dum",
+  "description": "Likes characters that are dumber than them. [PC/NPC Module]",
+  "file": "Admires Dum",
+  "size": 1623,
+  "trigger_bytes": 1475
+ },
+ {
+  "name": "Admires Fit",
+  "description": "Admires characters stronger than them. [NPC Only Module]",
+  "file": "Admires Fit",
+  "size": 1617,
+  "trigger_bytes": 1475
+ },
+ {
+  "name": "Admires Wit",
+  "description": "Admires characters smarter than them. [NPC Only Module]",
+  "file": "Admires Wit",
+  "size": 1615,
+  "trigger_bytes": 1475
+ },
+ {
+  "name": "Adoring",
+  "description": "Believes that lovers are supposed to be loved, not liked. [PC/NPC Module]",
+  "file": "Adoring",
+  "size": 676,
+  "trigger_bytes": 508
+ },
+ {
+  "name": "Affectionate",
+  "description": "Displays signs of affection more often. [NPC Only Module] -@link @croissant",
+  "file": "Affectionate",
+  "size": 4752,
+  "trigger_bytes": 4570
+ },
+ {
+  "name": "Agitating",
+  "description": "Causes characters who interact with them to become angry. [PC/NPC Module]",
+  "file": "Agitating",
+  "size": 1081,
+  "trigger_bytes": 909
+ },
+ {
+  "name": "Agreeable",
+  "description": "Has opinions that are easy to agree with. [PC/NPC Module]",
+  "file": "Agreeable",
+  "size": 2915,
+  "trigger_bytes": 2775
+ },
+ {
+  "name": "Aimless",
+  "description": "Will neglect studying, doing exercise and club activities. [PC/NPC Module]",
+  "file": "Aimless",
+  "size": 3293,
+  "trigger_bytes": 3123
+ },
+ {
+  "name": "Ambusher",
+  "description": "When aroused, Ambusher will roam secluded places, waiting for weaker characters to come. They will be taken away from public's eye and raped. If difference in strength isn't too great, Ambusher will just attempt to rape the victim. [NPC Only Module]",
+  "file": "Ambusher",
+  "size": 14625,
+  "trigger_bytes": 14103
+ },
+ {
+  "name": "Angry Sex",
+  "description": "Has sex with people they hate. [NPC Only Module]",
+  "file": "Angry Sex",
+  "size": 2413,
+  "trigger_bytes": 2291
+ },
+ {
+  "name": "Apathetic",
+  "description": "Doesn't have strong feelings towards the other people.[PC/NPC Module]",
+  "file": "Apathetic",
+  "size": 838,
+  "trigger_bytes": 674
+ },
+ {
+  "name": "Armed",
+  "description": "Will win in a deadly confrontation. [PC/NPC Module]",
+  "file": "Armed",
+  "size": 2409,
+  "trigger_bytes": 2289
+ },
+ {
+  "name": "Arrogant",
+  "description": "Has a chance to reject interactions from cards better than them in the stat they take pride in. [NPC Only Module]",
+  "file": "Arrogant",
+  "size": 4050,
+  "trigger_bytes": 3800
+ },
+ {
+  "name": "Assertive",
+  "description": "Will take charge during sex if they are the ones to initiate it. [NPC Only Module]",
+  "file": "Assertive",
+  "size": 2004,
+  "trigger_bytes": 1814
+ },
+ {
+  "name": "Attractive",
+  "description": "Interactions of this card have their success percentage doubled. [PC/NPC Module]",
+  "file": "Attractive",
+  "size": 735,
+  "trigger_bytes": 547
+ },
+ {
+  "name": "Auto Poser",
+  "description": "Automatically load .pose file in dialogue. If your character has a non-conventional full name(e.g. it s tarts with a space) you can customize their nickname by editing the auto_poser_nickname global variable.To set it up read https://github.com/aa2g/AA2Unlimited/wiki/Module-list#auto-pose [NPC Only Module]",
+  "file": "Auto Poser",
+  "size": 3012,
+  "trigger_bytes": 2370
+ },
+ {
+  "name": "Baby Trap",
+  "description": "On certain days, this card may try to lure someone she likes into a trap. Only goes for targets she thinks may fall for it. Will get angry if her womb stays empty. [Female NPC Only Module]",
+  "file": "Baby Trap",
+  "size": 12437,
+  "trigger_bytes": 12035
+ },
+ {
+  "name": "Bad Blood",
+  "description": "Will be enemies with others who have the same bad blood of same alias. To change it, edit a global variable\"Bad Blood Name\" (default \"Bad Blood\"  in Triggers tab in Globals section to the name of your liking.[PC/NPC Module]",
+  "file": "Bad Blood",
+  "size": 1196,
+  "trigger_bytes": 724
+ },
+ {
+  "name": "Bad Luck Omen",
+  "description": "Being around this card is just generally unlucky. [PC/NPC Module]",
+  "file": "Bad Luck Omen",
+  "size": 5651,
+  "trigger_bytes": 5487
+ },
+ {
+  "name": "Banchou",
+  "description": "Can take over their club and turn it into a gang.  - Banchou will have significantly increased success chance when interacting with members of his gang. The bonus will depend on his popularity within the gang. - The members of his gang will not attempt to slap/murder/insult the leader, and they will not see it as cheating if he sleeps around.  - In the case that the Banchou is an NPC, he will send out his gang members to do his murders for him.  - In the case that the Banchou is PC, he may give someone the \"kiss of death\", which will mark him as an enemy of the gang. One of the gang members will then murder him. To do the kiss of death, talk \"insult\" to the target, and then immediately talk \"kiss\" to them. - In the case that the Banchou is PC, he may order his gang members to do things to other characters. For example if you wish to order them to rape someone, tell the gang member to get along with the character you wish for him to rape and then immediately talk to them again and pick the \"Force\" action. The combo here is to first tell him to get along with someone, and then tell him which action to do to them. - Members of gangs will have increased success chance when interacting with members of the same gang, as well as gain additional love/like points. The bonuses depend on their popularity within the gang. Members of gangs will have decreased success chance when interacting with characters who are not in their gang. In case leaders of two gangs are on bad terms, the members of their gangs will be hostile. - Members of gangs will not enter relationships, or consent to sex with anyone who is not a member of their gang. - To invite people into your gang, ask them to join your club. This will only work if they have high love or like towards you. NPC Banchous will do this by themselves. You can tell apart the members of your gang by the fact that they will be your club members. Only your gang members will be in your club. - To kick someone out of your gang, talk \"insult\" to them, followed by \"Go Away\". If you as PC are in an NPC's gang, talk \"insult\" to the Banchou and then tell him to go away if you wish to quit the gang. NPC leaders will automatically kick out gang members they dislike, and gang members will automatically leave gangs that don't treat them well. [PC/NPC Module]",
+  "file": "Banchou",
+  "size": 30328,
+  "trigger_bytes": 25652
+ },
+ {
+  "name": "Battle Tactics",
+  "description": "Applies additional post-fight effects depending on the stance: All-Out - Uses pure willpower to overcome the adversary. Every loss makes them stronger until they break; One Blow - on victory cripples the opponent. The damage becomes permanent if not healed soon; Exotic - so stylish that everyone around them gets horny if they win. [PC/NPC Module] -@croissant @link",
+  "file": "Battle Tactics",
+  "size": 8650,
+  "trigger_bytes": 7876
+ },
+ {
+  "name": "Begone Thot",
+  "description": "Will get violent with anyone trying to get all close and personal with them without them approving. [NPC Only Module]",
+  "file": "Begone Thot",
+  "size": 3992,
+  "trigger_bytes": 3728
+ },
+ {
+  "name": "Bias-Abomination",
+  "description": "More responsive towards abominations",
+  "file": "Bias-Abomination",
+  "size": 924,
+  "trigger_bytes": 812
+ },
+ {
+  "name": "Bias-Alien",
+  "description": "More responsive towards aliens",
+  "file": "Bias-Alien",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Angel",
+  "description": "More responsive towards angels",
+  "file": "Bias-Angel",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Beastfolk",
+  "description": "More responsive towards beastfolk",
+  "file": "Bias-Beastfolk",
+  "size": 906,
+  "trigger_bytes": 804
+ },
+ {
+  "name": "Bias-Construct",
+  "description": "More responsive towards constructs",
+  "file": "Bias-Construct",
+  "size": 908,
+  "trigger_bytes": 804
+ },
+ {
+  "name": "Bias-Deity",
+  "description": "More responsive towards deities",
+  "file": "Bias-Deity",
+  "size": 878,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Demon",
+  "description": "More responsive towards demons",
+  "file": "Bias-Demon",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Dragon",
+  "description": "More responsive towards dragons",
+  "file": "Bias-Dragon",
+  "size": 884,
+  "trigger_bytes": 792
+ },
+ {
+  "name": "Bias-Elf",
+  "description": "More responsive towards elves",
+  "file": "Bias-Elf",
+  "size": 862,
+  "trigger_bytes": 780
+ },
+ {
+  "name": "Bias-Fairy",
+  "description": "More responsive towards fairies",
+  "file": "Bias-Fairy",
+  "size": 878,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Ghost",
+  "description": "More responsive towards ghosts",
+  "file": "Bias-Ghost",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Greenskin",
+  "description": "More responsive towards greenskins",
+  "file": "Bias-Greenskin",
+  "size": 908,
+  "trigger_bytes": 804
+ },
+ {
+  "name": "Bias-Human",
+  "description": "More responsive towards humans",
+  "file": "Bias-Human",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Inorganic",
+  "description": "More responsive towards inorganics",
+  "file": "Bias-Inorganic",
+  "size": 908,
+  "trigger_bytes": 804
+ },
+ {
+  "name": "Bias-Machine",
+  "description": "More responsive towards machines",
+  "file": "Bias-Machine",
+  "size": 892,
+  "trigger_bytes": 796
+ },
+ {
+  "name": "Bias-Magic",
+  "description": "More responsive towards magic creatures",
+  "file": "Bias-Magic",
+  "size": 894,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Meme",
+  "description": "More responsive towards memes",
+  "file": "Bias-Meme",
+  "size": 868,
+  "trigger_bytes": 784
+ },
+ {
+  "name": "Bias-Mutant",
+  "description": "More responsive towards mutants",
+  "file": "Bias-Mutant",
+  "size": 884,
+  "trigger_bytes": 792
+ },
+ {
+  "name": "Bias-Plant",
+  "description": "More responsive towards plants",
+  "file": "Bias-Plant",
+  "size": 876,
+  "trigger_bytes": 788
+ },
+ {
+  "name": "Bias-Psychic",
+  "description": "More responsive towards psychics",
+  "file": "Bias-Psychic",
+  "size": 892,
+  "trigger_bytes": 796
+ },
+ {
+  "name": "Bias-Spirit",
+  "description": "More responsive towards spirits",
+  "file": "Bias-Spirit",
+  "size": 884,
+  "trigger_bytes": 792
+ },
+ {
+  "name": "Bias-Undead",
+  "description": "More responsive towards undead",
+  "file": "Bias-Undead",
+  "size": 882,
+  "trigger_bytes": 792
+ },
+ {
+  "name": "Bias-Vampire",
+  "description": "More responsive towards vampires",
+  "file": "Bias-Vampire",
+  "size": 892,
+  "trigger_bytes": 796
+ },
+ {
+  "name": "Bias-Zombie",
+  "description": "More responsive towards zombies",
+  "file": "Bias-Zombie",
+  "size": 884,
+  "trigger_bytes": 792
+ },
+ {
+  "name": "Birthday Suit",
+  "description": "Gets naked straight away when the H starts. [PC/NPC Module]",
+  "file": "Birthday Suit",
+  "size": 660,
+  "trigger_bytes": 508
+ },
+ {
+  "name": "Blackmailer",
+  "description": "If this card is in possession of someone's personal sexual item they can blackmail them, making the victim card exploitable, but only for the Blackmailer since they have their item. An item is considered personal if it contains the full name of who it belongs to, example being \"Makise Kurisu's nude photo\", or \"MakiseKurisu's nude photo\". [PC/NPC Module]",
+  "file": "Blackmailer",
+  "size": 5536,
+  "trigger_bytes": 4796
+ },
+ {
+  "name": "Body Conscious",
+  "description": "Doesn't like being seen naked. [NPC Only Module]",
+  "file": "Body Conscious",
+  "size": 1587,
+  "trigger_bytes": 1455
+ },
+ {
+  "name": "Boiling Point",
+  "description": "Every time this card is forced to have sex it marks their abuser and has an incremental chance to snap and murder one of them or someone else they probably don't like. [NPC Only Module]",
+  "file": "Boiling Point",
+  "size": 5632,
+  "trigger_bytes": 5228
+ },
+ {
+  "name": "Bookworm",
+  "description": "Will use any possible excuse to get to the library. [NPC Only Module]",
+  "file": "Bookworm",
+  "size": 1418,
+  "trigger_bytes": 1256
+ },
+ {
+  "name": "Breakup Style",
+  "description": "Will use \"breakup_style\" by default after breaking up with someone once. [PC/NPC Module]",
+  "file": "Breakup Style",
+  "size": 2370,
+  "trigger_bytes": 2160
+ },
+ {
+  "name": "Breast Envy",
+  "description": "Envies girls that have larger breasts than her. [Female NPC Only Module]",
+  "file": "Breast Envy",
+  "size": 1721,
+  "trigger_bytes": 1547
+ },
+ {
+  "name": "Brute",
+  "description": "If rape attempts are refused this character can and will fight to force success. [PC/NPC Module] Brute module can be applied both to PC and on NPCs. -If the module is equipped on an NPC card, if the NPC attempts to rape a character and the character refuses he will immediately fight them. This interaction cannot be refused. If he wins the fight, he will rape the other character. The victim can be the PC as well. If the PC loses, an H scene will start. -If the module is equipped on a PC card, if the PC attempts to rape a character and the character refuses, player can try to fight them and they will not be able to refuse. If the player wins, an h scene will start.",
+  "file": "Brute",
+  "size": 12448,
+  "trigger_bytes": 11082
+ },
+ {
+  "name": "Bully",
+  "description": "More likely to bully characters weaker than them that they do not like. [NPC Only Module]",
+  "file": "Bully",
+  "size": 3538,
+  "trigger_bytes": 3342
+ },
+ {
+  "name": "Busy Hands",
+  "description": "Always touching themselves. [NPC Only Module]",
+  "file": "Busy Hands",
+  "size": 1231,
+  "trigger_bytes": 1113
+ },
+ {
+  "name": "Calculative",
+  "description": "Will not break up until they have another lover lined up. [NPC Only Module]",
+  "file": "Calculative",
+  "size": 2315,
+  "trigger_bytes": 2135
+ },
+ {
+  "name": "Calming",
+  "description": "Makes the characters it interacts with relaxed. [PC/NPC Module]",
+  "file": "Calming",
+  "size": 1041,
+  "trigger_bytes": 893
+ },
+ {
+  "name": "Capricious",
+  "description": "Interactions may yield unpredictable results. [PC/NPC Module]",
+  "file": "Capricious",
+  "size": 1302,
+  "trigger_bytes": 1152
+ },
+ {
+  "name": "Cat in Heat",
+  "description": "Is kinda horny on certain days. [PC/NPC Module]",
+  "file": "Cat in Heat",
+  "size": 1696,
+  "trigger_bytes": 1572
+ },
+ {
+  "name": "Cautious",
+  "description": "Can't be caught off-guard and slapped. [PC/NPC Module]",
+  "file": "Cautious",
+  "size": 818,
+  "trigger_bytes": 686
+ },
+ {
+  "name": "Chained Maiden",
+  "description": "Becomes enslaved to the character who took their virginity, unable to refuse sex with them. When left unattended, they grow desperate and will take initiative. Only works on virgin cards. [NPC Only Module] - @Shou",
+  "file": "Chained Maiden",
+  "size": 6452,
+  "trigger_bytes": 5990
+ },
+ {
+  "name": "Charismatic",
+  "description": "You just can't hate them. [PC/NPC Module]",
+  "file": "Charismatic",
+  "size": 1871,
+  "trigger_bytes": 1759
+ },
+ {
+  "name": "Chaste Cherisher",
+  "description": "Likes characters with high virtue. [NPC Only Module]",
+  "file": "Chaste Cherisher",
+  "size": 1643,
+  "trigger_bytes": 1499
+ },
+ {
+  "name": "Cheating",
+  "description": "Prone to cheat on the lover.  [NPC Only Module]",
+  "file": "Cheating",
+  "size": 3766,
+  "trigger_bytes": 3648
+ },
+ {
+  "name": "Cheating Sheet",
+  "description": "Will attempt to cheat on Academic Exam. [PC/NPC Module]",
+  "file": "Cheating Sheet",
+  "size": 1552,
+  "trigger_bytes": 1406
+ },
+ {
+  "name": "Cheeky",
+  "description": "Likes gloating. [NPC Only Module]",
+  "file": "Cheeky",
+  "size": 1211,
+  "trigger_bytes": 1125
+ },
+ {
+  "name": "Cherry Hunter",
+  "description": "Loves virgins. [NPC Only Module]",
+  "file": "Cherry Hunter",
+  "size": 3403,
+  "trigger_bytes": 3305
+ },
+ {
+  "name": "Childhood Friend",
+  "description": "This module makes this card become friendly with all their childhood friends from the first time you add them to the class. To specify the childhood friends you can edit the \"childhood_friend\" global variable. Should look something like this: childhood_friend = \"Lastname Firstname, First Last,  Nickname  \" [PC/NPC Module]",
+  "file": "Childhood Friend",
+  "size": 2047,
+  "trigger_bytes": 1359
+ },
+ {
+  "name": "Christian",
+  "description": "Will not allow vaginal sex before marriage. [NPC Only Module]",
+  "file": "Christian",
+  "size": 7190,
+  "trigger_bytes": 7042
+ },
+ {
+  "name": "Chubby Chaser",
+  "description": "Prefers fat characters. [NPC Only Module]",
+  "file": "Chubby Chaser",
+  "size": 1667,
+  "trigger_bytes": 1551
+ },
+ {
+  "name": "Clique",
+  "description": "Will be friendlier with others who is in the clique with the same name. To change the clique name, in Triggers tab in Globals section edit the global variable \"Clique Name\" value (default \"Clique\") to the name of your liking. [PC/NPC Module]",
+  "file": "Clique",
+  "size": 1224,
+  "trigger_bytes": 722
+ },
+ {
+  "name": "Club Leader",
+  "description": "This card is a club leader of whatever club it is in or someone who is one essentially, even if not on paper. Depending on a club, next bonuses apply to them and their club members whenever this card is present in the club room of their club: -Track: if a club member runs through a Track Field (comes in the room from the one side and leaves from the other), they train Strength and lose some Stamina; -Swimming: successful conversation between club members wearing swimsuit or club outfit at the Pool raise Strength and reduce Stamina; -Baseball: successful conversation betweeb club members at Baseball Field makes them feel more Energetic and raises Strength proportionally to their Energetic mood; -Ball Games: increased success rate for Headpats and Hugs between club members, on success raises Strength and reduces Stamina; -Martial: fights between club members in Dojo don't affect relationship, increase Strength and reduce Stamina; -Fine Arts: going to Karaoke from their clubroom increases Intelligence and reduces Stamina if at least one other club member comes with them; -Tea Ceremony: being in their clubroom increases Sociability for club members by 1, successful interactions between club members increase Intelligence and reduce Stamina; -Other: going to Arcade from their clubroom increases Intelligence and Strength and reduces Stamina if at least one other club member comes with them. [PC/NPC Module]",
+  "file": "Club Leader",
+  "size": 39641,
+  "trigger_bytes": 36745
+ },
+ {
+  "name": "Club Pride",
+  "description": "Cannot be convinced to change clubs. [NPC Only Module]",
+  "file": "Club Pride",
+  "size": 836,
+  "trigger_bytes": 700
+ },
+ {
+  "name": "Club Style",
+  "description": "Changes to \"ClubStyle\" when doing club activities, or to \"ClubStyle_corrupted\" if corrupted. [PC/NPC Module]",
+  "file": "Club Style",
+  "size": 4916,
+  "trigger_bytes": 4672
+ },
+ {
+  "name": "Coach",
+  "description": "Helps others with athletic training. [PC/NPC Module]",
+  "file": "Coach",
+  "size": 3196,
+  "trigger_bytes": 3074
+ },
+ {
+  "name": "Cold Groin",
+  "description": "Won't agree to have sex unless in the mood. [NPC Only Module]",
+  "file": "Cold Groin",
+  "size": 1969,
+  "trigger_bytes": 1819
+ },
+ {
+  "name": "Compensated Dating",
+  "description": "Will hang around the train station in the evening, asking random people if they want to have *fun* by asking to go to karaoke with them. You can also ask them yourself by asking to go to karaoke in the evening. [PC/NPC Module]",
+  "file": "Compensated Dating",
+  "size": 9472,
+  "trigger_bytes": 8976
+ },
+ {
+  "name": "Compliant",
+  "description": "Will likely comply with forceful actions that is not H. [PC/NPC Module]",
+  "file": "Compliant",
+  "size": 1237,
+  "trigger_bytes": 1069
+ },
+ {
+  "name": "Conflicted",
+  "description": "May occasionally flip their answers [PC/NPC Module]",
+  "file": "Conflicted",
+  "size": 1258,
+  "trigger_bytes": 1128
+ },
+ {
+  "name": "Controlling",
+  "description": "Will not allow their lover to get close to others. [NPC Only Module]",
+  "file": "Controlling",
+  "size": 4055,
+  "trigger_bytes": 3889
+ },
+ {
+  "name": "Cool Sunglasses",
+  "description": "Gives a 25% interaction bonus during the day, but with a small chance of giving a response they did not mean during the evening due to obscured vision. [NPC Only Module]",
+  "file": "Cool Sunglasses",
+  "size": 1264,
+  "trigger_bytes": 888
+ },
+ {
+  "name": "Corruption",
+  "description": "Corrupted by forceful actions. Loses virtue and eventually transforms into the \"corrupted\" style. Wholesome actions have the opposite effect and culminate in transforming into \"pure\" style. Intermediate styles in the form of \"corruptedX\" and \"pureX\" where X is a number from 1-4 are optional and the character will change to this style if corrupted/purified enough. [PC/NPC Module] -@link et al.",
+  "file": "Corruption",
+  "size": 27726,
+  "trigger_bytes": 26908
+ },
+ {
+  "name": "Corruptor",
+  "description": "Corrupts by forceful actions, causing them to lose virtue. [PC/NPC Module] -@link et al.",
+  "file": "Corruptor",
+  "size": 6658,
+  "trigger_bytes": 6456
+ },
+ {
+  "name": "Coward",
+  "description": "Will be reluctant to fight with someone who is stronger than them. [NPC Only Module]",
+  "file": "Coward",
+  "size": 1593,
+  "trigger_bytes": 1405
+ },
+ {
+  "name": "Cowtits Craving",
+  "description": "Prefers large breasts. [NPC Only Module]",
+  "file": "Cowtits Craving",
+  "size": 1813,
+  "trigger_bytes": 1695
+ },
+ {
+  "name": "Credible",
+  "description": "People just trust their opinion, you know? [PC/NPC Module]",
+  "file": "Credible",
+  "size": 878,
+  "trigger_bytes": 738
+ },
+ {
+  "name": "Crush",
+  "description": "This module makes this card fall in love with all their crushes from the first time you add them to the class. To specify the crushes you can edit the \"crush\" global variable. Should look something like this: crush = \"Lastname Firstname, First Last,  Nickname  \" [PC/NPC Module]",
+  "file": "Crush",
+  "size": 1717,
+  "trigger_bytes": 1141
+ },
+ {
+  "name": "Cuck",
+  "description": "- When this card competes over sex and loses, it is forced to watch.  - When both you and your lover are horny and you tell them that you want them to get along with someone, your lover might attempt to sleep with them, and if they succeed, from then on they might decide to invite you to watch when they have sex with that person. - When both you and your lover are horny and you tell them that you want them to get along with everyone, your lover will pick someone they like, attempt to sleep with them, and if they succeed, from then on they might decide to invite you to watch when they have sex with that person.  - Cheating characters will always want to cuck you; Loyal, Singleminded and highest virtue characters will never accept it.  - There can be multiple people your girl is cucking you with. [PC Only Module]",
+  "file": "Cuck",
+  "size": 25002,
+  "trigger_bytes": 23334
+ },
+ {
+  "name": "Cupid",
+  "description": "Makes people fall in love by spreading good rumors. [PC/NPC Module]",
+  "file": "Cupid",
+  "size": 2615,
+  "trigger_bytes": 2463
+ },
+ {
+  "name": "Dark Semen",
+  "description": "Influences morality of people they have sex with in a negative way. [NPC/PC Module]",
+  "file": "Dark Semen",
+  "size": 3479,
+  "trigger_bytes": 3285
+ },
+ {
+  "name": "Date Fashion",
+  "description": "Will change into the 'Date' style when they have a date on Sunday. [PC/NPC Module]",
+  "file": "Date Fashion",
+  "size": 3102,
+  "trigger_bytes": 2906
+ },
+ {
+  "name": "Decisive",
+  "description": "When they decide it's time to break up, they will not take no for an answer. [PC/NPC Module]",
+  "file": "Decisive",
+  "size": 1723,
+  "trigger_bytes": 1515
+ },
+ {
+  "name": "Decoy Damsel",
+  "description": "Will exploit White Knight's eagerness to help to get a person they like least in trouble. [NPC Only Module]",
+  "file": "Decoy Damsel",
+  "size": 2953,
+  "trigger_bytes": 2707
+ },
+ {
+  "name": "Degenerate",
+  "description": "Likes handholding. [PC/NPC Module]",
+  "file": "Degenerate",
+  "size": 1995,
+  "trigger_bytes": 1899
+ },
+ {
+  "name": "Delinquent",
+  "description": "Has troubles communicating with authority figures. [NPC Only Module]",
+  "file": "Delinquent",
+  "size": 3331,
+  "trigger_bytes": 3167
+ },
+ {
+  "name": "Demanding",
+  "description": "Has high expectations of their lover and requires a lot of attention. [PC/NPC Module]",
+  "file": "Demanding",
+  "size": 2066,
+  "trigger_bytes": 1870
+ },
+ {
+  "name": "Dense",
+  "description": "Confessions seem to fly over their ears. Asking them out might require a certain persistence as well... [PC/NPC Module]",
+  "file": "Dense",
+  "size": 2487,
+  "trigger_bytes": 2231
+ },
+ {
+  "name": "Dependable",
+  "description": "Will not turn their back on those who ask for help. [PC/NPC Module]",
+  "file": "Dependable",
+  "size": 2090,
+  "trigger_bytes": 1928
+ },
+ {
+  "name": "Depressing Dreams",
+  "description": "Suffers from depressing dreams if the card falls asleep during the first break period. [NPC Only Module]",
+  "file": "Depressing Dreams",
+  "size": 1843,
+  "trigger_bytes": 1593
+ },
+ {
+  "name": "Depression",
+  "description": "This card has a crippling depression, which can be further affected in both ways. There are 3 stages with 3 corresponding styles: 'notdepressed', 'depressed', 'reallydepressed'. Level of depression affects the mood of a character, interaction rates, chance to skip school and stats. [PC/NPC Module]",
+  "file": "Depression",
+  "size": 29199,
+  "trigger_bytes": 28575
+ },
+ {
+  "name": "Despises Midgets",
+  "description": "Refuses to acknowledge the existence of short characters. [NPC Only Module]",
+  "file": "Despises Midgets",
+  "size": 1620,
+  "trigger_bytes": 1430
+ },
+ {
+  "name": "Detective",
+  "description": "When murder happens the Detective gains the ability to find the Murderer - next day after murder happens during the homeroom Detective receives a notification asking to find the Murderer - once on the case the Detective can interrogate people by asking them to meet up at a place of Detective's choosing - once in the designated interrogation room they try to stay there for a while, if the Detective doesn't come they'll leave and cancel interrogation - while in the interrogation room the detective can gather three types of reports:   - talking about life will gather Trivia. It includes who was in relationship at the time of murder and current traits and modules of the friends of the person being interrogated   - talking about hobbies will gather their alibi. It includes information about where they were at the time of murder and what they were doing. They also tell who was in the same room and what they were doing too. Everyone avoids talking about the murder itself even if they witnessed it and the Murderer outright lies where they were and what they were doing   - talking about love will gather intrigues. It includes information about people's disposition to each other at the time of murder - the better Detective's relationship with the interrogated person is the more information they will give them - the Detective can read their previous reports by targeting a person and going to the library. The reports are printed in the console - the Detective can confront their suspect at any point by trying to fight them. Detective can outsmart them and the Murderer will admit their guilt, otherwise they fight - if Detective loses the case is closed with failure - if Detective wins or the Murderer confesses the case is closed. Jailers will confine the Murderer - if Detective falsely accuses somebody they will always fight back and if Detective wins the case is closed with failure and Detective loses his Detective trait. If Detective loses the case is closed. [PC Module] -@link",
+  "file": "Detective",
+  "size": 18387,
+  "trigger_bytes": 14335
+ },
+ {
+  "name": "Devoted Spouse",
+  "description": "Becomes loyal after marriage. [NPC Only Module]",
+  "file": "Devoted Spouse",
+  "size": 6278,
+  "trigger_bytes": 6148
+ },
+ {
+  "name": "Dicktator",
+  "description": "When this card forces others, they have a chance to either get this card's sexual preference or lose one if this card doesn't have it. [PC/NPC Module]",
+  "file": "Dicktator",
+  "size": 5282,
+  "trigger_bytes": 4956
+ },
+ {
+  "name": "Dirty",
+  "description": "Doesn't clean her mouth after swallowing, or decals from her body. Will walk around covered in semen for a period. [NPC Only Module]",
+  "file": "Dirty",
+  "size": 8308,
+  "trigger_bytes": 8026
+ },
+ {
+  "name": "Discreet",
+  "description": "Would rather have sex without people watching. [NPC Only Module]",
+  "file": "Discreet",
+  "size": 2162,
+  "trigger_bytes": 2010
+ },
+ {
+  "name": "Dislikes Overly Competent",
+  "description": "Doesn't like people who are too competent in something. [NPC Only Module]",
+  "file": "Dislikes Overly Competent",
+  "size": 2138,
+  "trigger_bytes": 1934
+ },
+ {
+  "name": "Dislikes Simpletons",
+  "description": "Not interested in people who aren't especially smart. [PC/NPC Module]",
+  "file": "Dislikes Simpletons",
+  "size": 1866,
+  "trigger_bytes": 1682
+ },
+ {
+  "name": "Diva",
+  "description": "Starts off with an already good impression from the class. [PC/NPC Module]",
+  "file": "Diva",
+  "size": 1121,
+  "trigger_bytes": 957
+ },
+ {
+  "name": "Dominant",
+  "description": "Prefers rough sex. [NPC Only Module]",
+  "file": "Dominant",
+  "size": 1846,
+  "trigger_bytes": 1750
+ },
+ {
+  "name": "Dominatrix",
+  "description": "Makes their masochist or femdom loving lovers exploitable. Is sometimes into pegging. [PC/NPC Module]",
+  "file": "Dominatrix",
+  "size": 6346,
+  "trigger_bytes": 6116
+ },
+ {
+  "name": "Drama Queen",
+  "description": "Tends to overreact and create drama in relationship if there's none. [NPC Only Module]",
+  "file": "Drama Queen",
+  "size": 6222,
+  "trigger_bytes": 6020
+ },
+ {
+  "name": "Dreadful",
+  "description": "This character emits dreadful aura. People will not try to screw them or their lover, but will be more willing to fight with them. Also less likely to successfully engage in small talk. [PC/NPC Module]",
+  "file": "Dreadful",
+  "size": 4643,
+  "trigger_bytes": 4217
+ },
+ {
+  "name": "Drunk",
+  "description": "Will drink durning evening periods if they go to the restaurant, which will make them horny and more responsive. [NPC Only Module]",
+  "file": "Drunk",
+  "size": 1386,
+  "trigger_bytes": 1108
+ },
+ {
+  "name": "Dry Skin",
+  "description": "Prefers to be near the pool at all times, and is more open to interaction there. [NPC Only Module]",
+  "file": "Dry Skin",
+  "size": 1133,
+  "trigger_bytes": 913
+ },
+ {
+  "name": "Easy Victim",
+  "description": "More susceptible to be a target of rape by scheming types and types with rapist modules. [PC/NPC module]",
+  "file": "Easy Victim",
+  "size": 2534,
+  "trigger_bytes": 2296
+ },
+ {
+  "name": "Embittered",
+  "description": "Unsuccessful relationship with someone may make them feel embittered towards people of the same gender as whom they broke up with. [PC/NPC Module]",
+  "file": "Embittered",
+  "size": 5932,
+  "trigger_bytes": 5612
+ },
+ {
+  "name": "Emotional",
+  "description": "Their mood strongly affects how their opinion towards someone changes. [PC/NPC Module]",
+  "file": "Emotional",
+  "size": 3334,
+  "trigger_bytes": 3136
+ },
+ {
+  "name": "Empathic",
+  "description": "Is susceptible to the mood of those they talk to. Will assimilate traits, values and behavior of their lovers. [PC/NPC Module]",
+  "file": "Empathic",
+  "size": 4169,
+  "trigger_bytes": 3893
+ },
+ {
+  "name": "Enemy",
+  "description": "This module makes this card hate all their enemies from the first time you add them to the class. To specify the enemies you can edit the \"enemy\" global variable. Should look something like this: enemy = \"Lastname Firstname, First Last,  Nickname  \" [PC/NPC Module]",
+  "file": "Enemy",
+  "size": 1691,
+  "trigger_bytes": 1141
+ },
+ {
+  "name": "Entitled",
+  "description": "Feels entitled to your crotch, might get physical if their advances are refused. [NPC Only Module",
+  "file": "Entitled",
+  "size": 2385,
+  "trigger_bytes": 2167
+ },
+ {
+  "name": "Eris",
+  "description": "Makes people hate each other by spreading bad rumors. [PC/NPC Module]",
+  "file": "Eris",
+  "size": 2373,
+  "trigger_bytes": 2219
+ },
+ {
+  "name": "Evening Cosplay",
+  "description": "On weekdays will randomly switch to the style between \"eveningfirst\" and \"eveninglast\" after going into the locker of their respective gender in the evening. [PC/NPC Module]",
+  "file": "Evening Cosplay",
+  "size": 3165,
+  "trigger_bytes": 2781
+ },
+ {
+  "name": "Evening Fashion",
+  "description": "On weekdays will switch to their \"evening\"  (or \"corrupted_evening\" if character is corrupted) style after going into the locker of their respective gender in the evening. [PC/NPC Module]",
+  "file": "Evening Fashion",
+  "size": 4791,
+  "trigger_bytes": 4379
+ },
+ {
+  "name": "Exam Glasses",
+  "description": "Card will use their glasses during academic exam week and club competition week if they are in the Intelligence-based club. [PC/NPC Module]",
+  "file": "Exam Glasses",
+  "size": 1642,
+  "trigger_bytes": 1332
+ },
+ {
+  "name": "Fake Tits",
+  "description": "Character's tits are fake. Groping them is easier but they're less sensitive and don't arouse as much. [PC/NPC Module]",
+  "file": "Fake Tits",
+  "size": 2439,
+  "trigger_bytes": 2177
+ },
+ {
+  "name": "Family Guy",
+  "description": "Will not fall in love with family members. Recognizes family by last name. [PC/NPC Module]",
+  "file": "Family Guy",
+  "size": 2209,
+  "trigger_bytes": 2001
+ },
+ {
+  "name": "Family Guy 2",
+  "description": "Will not fall in love with family members. Recognizes family by first name (western order of naming). [PC/NPC Module]",
+  "file": "Family Guy 2",
+  "size": 2267,
+  "trigger_bytes": 2001
+ },
+ {
+  "name": "Fashionable",
+  "description": "Changes to a random style between ones named StyleFirst to StyleLast once every day. [PC/NPC Module]",
+  "file": "Fashionable",
+  "size": 1698,
+  "trigger_bytes": 1468
+ },
+ {
+  "name": "Fickle",
+  "description": "When this card gets a new lover, they will try to breakup with all of their other lovers. [NPC Only Module]",
+  "file": "Fickle",
+  "size": 2118,
+  "trigger_bytes": 1884
+ },
+ {
+  "name": "Final Solution",
+  "description": "Will do everything to be together forever with a person they love, even if they get rejected. [NPC Only Module]",
+  "file": "Final Solution",
+  "size": 1614,
+  "trigger_bytes": 1356
+ },
+ {
+  "name": "Flaming Head",
+  "description": "Headpatting this character will burn clothes off and send you running to the infirmary. [PC/NPC Module]",
+  "file": "Flaming Head",
+  "size": 3580,
+  "trigger_bytes": 3342
+ },
+ {
+  "name": "Flasher",
+  "description": "Might occasionally flash someone, depending on their love and virtue. [NPC Only Module]",
+  "file": "Flasher",
+  "size": 3080,
+  "trigger_bytes": 2884
+ },
+ {
+  "name": "Flat Fancy",
+  "description": "Prefers small breasts. [NPC Only Module]",
+  "file": "Flat Fancy",
+  "size": 1763,
+  "trigger_bytes": 1655
+ },
+ {
+  "name": "Flatter-proof",
+  "description": "Doesn't like being flattered. [NPC Only Module]",
+  "file": "Flatter-proof",
+  "size": 864,
+  "trigger_bytes": 736
+ },
+ {
+  "name": "Forceful",
+  "description": "Will attempt to force those who refuse to have sex with them. [NPC Only Module]",
+  "file": "Forceful",
+  "size": 1732,
+  "trigger_bytes": 1550
+ },
+ {
+  "name": "Forgetful",
+  "description": "Might forget that some some interactions happened between periods.  Occasionally one-sidedly forgets the lover status. [PC/NPC Module] -@link",
+  "file": "Forgetful",
+  "size": 3619,
+  "trigger_bytes": 3311
+ },
+ {
+  "name": "Forgiving",
+  "description": "Is more likely to accept apologies. [NPC Only Module]",
+  "file": "Forgiving",
+  "size": 674,
+  "trigger_bytes": 542
+ },
+ {
+  "name": "Fresh Laundry",
+  "description": "Once the character gets home they reset their style to the default style. [PC/NPC Module]",
+  "file": "Fresh Laundry",
+  "size": 696,
+  "trigger_bytes": 484
+ },
+ {
+  "name": "Friendly Pat",
+  "description": "Headpats are not perceived as flirting, but as friendly action. [PC/NPC Module]",
+  "file": "Friendly Pat",
+  "size": 1893,
+  "trigger_bytes": 1703
+ },
+ {
+  "name": "Futa Freak",
+  "description": "Prefers females with peepees. [PC/NPC Module]",
+  "file": "Futa Freak",
+  "size": 1679,
+  "trigger_bytes": 1561
+ },
+ {
+  "name": "Futanari",
+  "description": "Designates the character as a Futanari.  - If Futa is the one to initiate sex, she will be the dominant one in the H scene. Futa will always be dominant in H scenes if she is fucking girls. - Makes Futanari characters compatible with vanilla pregnancy and Pregnancy module. MCP Version. [PC/NPC Module]",
+  "file": "Futanari",
+  "size": 5166,
+  "trigger_bytes": 4534
+ },
+ {
+  "name": "G Spot",
+  "description": "Massaging this card makes them slightly more aroused. Massage is perceived as flirting. [PC/NPC Module]",
+  "file": "G Spot",
+  "size": 1701,
+  "trigger_bytes": 1475
+ },
+ {
+  "name": "Gambler",
+  "description": "Allows you to gamble with another card, by placing your lovers on the line. To initiate, taunt the other target by encouraging them to study/train/club, then ask to get along with their lover. If they accept, they will choose one of your lovers as a wager. Once you accept, the gamble is now official, and the results will be out at the next academic/fitness/club test. The winner of the gamble will be able to perform 1 sexual action with the wagered lover of the loser. [PC Only Module]",
+  "file": "Gambler",
+  "size": 15586,
+  "trigger_bytes": 14588
+ },
+ {
+  "name": "Get On My Level",
+  "description": "Won't have sex with anyone who didn't outdo them on sports exams or won the fight with them. [NPC Only Module]",
+  "file": "Get On My Level",
+  "size": 12089,
+  "trigger_bytes": 11831
+ },
+ {
+  "name": "Gospel of Friendship",
+  "description": "Good rumours are more effective coming from them. [PC/NPC Module]",
+  "file": "Gospel of Friendship",
+  "size": 2802,
+  "trigger_bytes": 2624
+ },
+ {
+  "name": "Gossip Lover",
+  "description": "Is more likely to agree with rumors, whether good or bad. [NPC Only Module]",
+  "file": "Gossip Lover",
+  "size": 944,
+  "trigger_bytes": 762
+ },
+ {
+  "name": "Gossiper",
+  "description": "Will spread bad rumors about their lover if they are feeling jealous. [NPC Only Module]",
+  "file": "Gossiper",
+  "size": 1527,
+  "trigger_bytes": 1329
+ },
+ {
+  "name": "Gullible",
+  "description": "Doesn't suspect invitations to dark places. [NPC Only Module]",
+  "file": "Gullible",
+  "size": 3170,
+  "trigger_bytes": 3024
+ },
+ {
+  "name": "H Auto Poser",
+  "description": "Automatically load poses during sex. If your character has a non-conventional full name(e.g. it s tarts with a space) you can customize their nickname by editing the h_auto_poser_nickname global variable. Full description: https://github.com/aa2g/AA2Unlimited/wiki/Module-list#h-auto-poser",
+  "file": "H Auto Poser",
+  "size": 6912,
+  "trigger_bytes": 6298
+ },
+ {
+  "name": "H Style",
+  "description": "Switches to style \"hstyle\" when H starts. [PC/NPC Module]",
+  "file": "H Style",
+  "size": 3010,
+  "trigger_bytes": 2874
+ },
+ {
+  "name": "Hates Slander",
+  "description": "Doesn't like malicious gossip and people engaging in it. [NPC Only Module]",
+  "file": "Hates Slander",
+  "size": 1394,
+  "trigger_bytes": 1212
+ },
+ {
+  "name": "Haunted",
+  "description": "The card is possessed by a phantom that stores separate play data: separate relationship points and lover status than the host. The phantom can switch bodies by giving massages. When he takes possession of someone, their free will and play data is repressed by the phantom's. The phantom will act on their own feelings and relationships from that card's body during the possession, and will have lowest virtue and highest sociability. The possession ends when he possesses a new target, or when a period ends. When a period ends the phantom goes back to the original host's body. While he's away from the original host's body, the original host has its own free will and play data. Other cards do not percieve the phantom as a separate entity, there may be a lot of misunderstandings! The phantom can take possession of PC, in which case AutoPC will be turned on for the duration. [NPC Only Module]",
+  "file": "Haunted",
+  "size": 25282,
+  "trigger_bytes": 23462
+ },
+ {
+  "name": "Headpat Slut",
+  "description": "Card is more susceptible to receiving headpats. [NPC Only Module]",
+  "file": "Headpat Slut",
+  "size": 720,
+  "trigger_bytes": 558
+ },
+ {
+  "name": "Henshin",
+  "description": "Allow PC to change style during exploration mode to \"henshinStyle\" by pressing 'q' key. The low poly model won't be changed until entered change room. [PC Only Module]",
+  "file": "Henshin",
+  "size": 1601,
+  "trigger_bytes": 1245
+ },
+ {
+  "name": "Hesitant",
+  "description": "Might change their mind about what they were about to. [NPC Only Module]",
+  "file": "Hesitant",
+  "size": 1310,
+  "trigger_bytes": 1142
+ },
+ {
+  "name": "Hidden Camera",
+  "description": "All their personal items (that contain their full name in it) have a hidden camera attached to it which this card will use for goals beyond any real importance. [PC/NPC Module]",
+  "file": "Hidden Camera",
+  "size": 5051,
+  "trigger_bytes": 4665
+ },
+ {
+  "name": "Hoe Hopper",
+  "description": "Likes characters with lower virtue. [NPC Only Module]",
+  "file": "Hoe Hopper",
+  "size": 1585,
+  "trigger_bytes": 1451
+ },
+ {
+  "name": "Holy Semen",
+  "description": "Having sex with this character makes you a better person in general. [NPC/PC Module]",
+  "file": "Holy Semen",
+  "size": 4737,
+  "trigger_bytes": 4541
+ },
+ {
+  "name": "Homewrecker",
+  "description": "Prefers those that are already in relationships. [NPC Only Module]",
+  "file": "Homewrecker",
+  "size": 1818,
+  "trigger_bytes": 1656
+ },
+ {
+  "name": "Homophobic",
+  "description": "Makes this character hate and pick fights with homosexuals. [NPC Only Module]",
+  "file": "Homophobic",
+  "size": 2411,
+  "trigger_bytes": 2229
+ },
+ {
+  "name": "Hot Body",
+  "description": "Would-be killers might try a different approach. [NPC Only Module]",
+  "file": "Hot Body",
+  "size": 1530,
+  "trigger_bytes": 1374
+ },
+ {
+  "name": "Hug Pillow",
+  "description": "Card is more susceptible to receiving hugs. [NPC Only Module]",
+  "file": "Hug Pillow",
+  "size": 744,
+  "trigger_bytes": 594
+ },
+ {
+  "name": "Human Guise",
+  "description": "In folklore, deities and other supernatural beings often disguised themselves as humans. This module lets cards change styles depending on the intelligence of the card that is observing them. The higher the intelligence difference between PC and the disguised card, the more likely it is that he will see through the disguise. Keep the demon form as the default style, and in addition to it make two styles, first one called \"human form\", which is self-explanatory, and \"transition form\", which should ideally look like a mixture of both human and demon form, that others will see when they're unable to fully see through the disguise.  Full description https://pastebin.com/kakZNY4W",
+  "file": "Human Guise",
+  "size": 4650,
+  "trigger_bytes": 3254
+ },
+ {
+  "name": "Hunter-Abomination",
+  "description": "Hates abominations",
+  "file": "Hunter-Abomination",
+  "size": 984,
+  "trigger_bytes": 904
+ },
+ {
+  "name": "Hunter-Alien",
+  "description": "Hates aliens",
+  "file": "Hunter-Alien",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Angel",
+  "description": "Hates angels",
+  "file": "Hunter-Angel",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Beastfolk",
+  "description": "Hates beastfolk",
+  "file": "Hunter-Beastfolk",
+  "size": 966,
+  "trigger_bytes": 896
+ },
+ {
+  "name": "Hunter-Construct",
+  "description": "Hates constructs",
+  "file": "Hunter-Construct",
+  "size": 968,
+  "trigger_bytes": 896
+ },
+ {
+  "name": "Hunter-Deity",
+  "description": "Hates deities",
+  "file": "Hunter-Deity",
+  "size": 938,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Demon",
+  "description": "Hates demons",
+  "file": "Hunter-Demon",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Dragon",
+  "description": "Hates dragons",
+  "file": "Hunter-Dragon",
+  "size": 944,
+  "trigger_bytes": 884
+ },
+ {
+  "name": "Hunter-Elf",
+  "description": "Hates elves",
+  "file": "Hunter-Elf",
+  "size": 922,
+  "trigger_bytes": 872
+ },
+ {
+  "name": "Hunter-Fairy",
+  "description": "Hates fairies",
+  "file": "Hunter-Fairy",
+  "size": 938,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Ghost",
+  "description": "Hates ghosts",
+  "file": "Hunter-Ghost",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Greenskin",
+  "description": "Hates greenskins",
+  "file": "Hunter-Greenskin",
+  "size": 968,
+  "trigger_bytes": 896
+ },
+ {
+  "name": "Hunter-Human",
+  "description": "Hates humans",
+  "file": "Hunter-Human",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Inorganic",
+  "description": "Hates inorganic creatures",
+  "file": "Hunter-Inorganic",
+  "size": 986,
+  "trigger_bytes": 896
+ },
+ {
+  "name": "Hunter-Machine",
+  "description": "Hates machines",
+  "file": "Hunter-Machine",
+  "size": 952,
+  "trigger_bytes": 888
+ },
+ {
+  "name": "Hunter-Magic",
+  "description": "Hates magic creatures",
+  "file": "Hunter-Magic",
+  "size": 954,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Meme",
+  "description": "Hates memes",
+  "file": "Hunter-Meme",
+  "size": 928,
+  "trigger_bytes": 876
+ },
+ {
+  "name": "Hunter-Mutant",
+  "description": "Hates mutants",
+  "file": "Hunter-Mutant",
+  "size": 944,
+  "trigger_bytes": 884
+ },
+ {
+  "name": "Hunter-Plant",
+  "description": "Hates plants",
+  "file": "Hunter-Plant",
+  "size": 936,
+  "trigger_bytes": 880
+ },
+ {
+  "name": "Hunter-Psychic",
+  "description": "Hates psychics",
+  "file": "Hunter-Psychic",
+  "size": 952,
+  "trigger_bytes": 888
+ },
+ {
+  "name": "Hunter-Spirit",
+  "description": "Hates spirits",
+  "file": "Hunter-Spirit",
+  "size": 944,
+  "trigger_bytes": 884
+ },
+ {
+  "name": "Hunter-Undead",
+  "description": "Hates undead",
+  "file": "Hunter-Undead",
+  "size": 942,
+  "trigger_bytes": 884
+ },
+ {
+  "name": "Hunter-Vampire",
+  "description": "Hates vampires",
+  "file": "Hunter-Vampire",
+  "size": 952,
+  "trigger_bytes": 888
+ },
+ {
+  "name": "Hunter-Zombie",
+  "description": "Hates zombies",
+  "file": "Hunter-Zombie",
+  "size": 944,
+  "trigger_bytes": 884
+ },
+ {
+  "name": "Impatient",
+  "description": "Progressively lose virtue if they love someone, but don't have any lovers. [PC/NPC Module]",
+  "file": "Impatient",
+  "size": 2302,
+  "trigger_bytes": 2096
+ },
+ {
+  "name": "Inattentive",
+  "description": "Can't focus on one conversation topic for long. [PC/NPC Module]",
+  "file": "Inattentive",
+  "size": 5318,
+  "trigger_bytes": 5162
+ },
+ {
+  "name": "Incest Fetish",
+  "description": "Acts more affectionate with family members. Recognizes family by last name. [NPC Only Module]",
+  "file": "Incest Fetish",
+  "size": 3245,
+  "trigger_bytes": 3025
+ },
+ {
+  "name": "Incest Fetish 2",
+  "description": "Acts more affectionate with family members. Recognizes family by first name (western order of naming). [NPC Only Module]",
+  "file": "Incest Fetish 2",
+  "size": 3303,
+  "trigger_bytes": 3025
+ },
+ {
+  "name": "Indifferent",
+  "description": "Has no interest in relationships. [NPC Only Module]",
+  "file": "Indifferent",
+  "size": 1378,
+  "trigger_bytes": 1246
+ },
+ {
+  "name": "Infertile",
+  "description": "Unable to get or make anyone pregnant. [PC/NPC Module]",
+  "file": "Infertile",
+  "size": 778,
+  "trigger_bytes": 644
+ },
+ {
+  "name": "Insane",
+  "description": "Changes personality with each action. [NPC Only Module]",
+  "file": "Insane",
+  "size": 1208,
+  "trigger_bytes": 1078
+ },
+ {
+  "name": "Insecure",
+  "description": "Becomes exploitable when they find themselves too weak, can be reversed by gaining back enough strength. [PC/NPC Module]",
+  "file": "Insecure",
+  "size": 1504,
+  "trigger_bytes": 1240
+ },
+ {
+  "name": "Intimately Assertive",
+  "description": "Occasionally asserts their dominance in private rooms instead. [NPC Only Module]",
+  "file": "Intimately Assertive",
+  "size": 3871,
+  "trigger_bytes": 3663
+ },
+ {
+  "name": "Introvert",
+  "description": "Only approaches people close to them. [NPC Only Module]",
+  "file": "Introvert",
+  "size": 1058,
+  "trigger_bytes": 922
+ },
+ {
+  "name": "Irregular Ovulation",
+  "description": "Normal risk days can be dangerous. [Female NPC Only Module]",
+  "file": "Irregular Ovulation",
+  "size": 3916,
+  "trigger_bytes": 3752
+ },
+ {
+  "name": "Irresponsible",
+  "description": "Won't take responsibility for pregnancy. [PC/NPC Module]",
+  "file": "Irresponsible",
+  "size": 1195,
+  "trigger_bytes": 1049
+ },
+ {
+  "name": "Jaded",
+  "description": "Doesn't like romance. [NPC Only Module]",
+  "file": "Jaded",
+  "size": 912,
+  "trigger_bytes": 816
+ },
+ {
+  "name": "Jailer",
+  "description": "Will attempt to jail those who commit offences and confine them to a room (the roof). If the prisoner attempts to leave the room they will be brought back and punished for trying to escape.  - The duration of their confinement depends on the graveness of the offense. For skipping class jail time is one day, for fights and sexual harassment two days, and for rape four days. For being caught as the perpetrator of a murder by a Detective, you get life in prison without an ability to escape.  - Depending on their mood and traits, a jailer might wish to punish the captive in various ways. If the Jailer has Schemer or Perverted traits, these punishments may be of the lewd nature.  - For the duration of the confinement, the prisoner loses their strength, has their movement speed slowed, and becomes exploitable.  - If the captive manages to run away and reach the train station during the evening, they are freed. If the Jailer finds you, you will be brought back to prison and punished, and the duration of your confinement will increase. If someone who doesn't like you witnesses your escape, they will call the jailers to your location.  - The player can play as a Jailer too. Fight the ones who commit offences to jail them, and if they attempt to escape, use the follow me action to bring them back to the roof.  - The law does not protect criminals. [PC/NPC Module]",
+  "file": "Jailer",
+  "size": 33997,
+  "trigger_bytes": 31227
+ },
+ {
+  "name": "Kidnapper",
+  "description": "In case their sexual advances are refused, and the card that refused them has an exploitable lover, this card might go for underhanded tactics - it can blackmail exploitable characters to help them kidnap and rape their lovers. This module can be applied both to PC and NPC cards. -If PC is the target of this scheme, while your lover is the exploitable character being blackmailed, your lover might take you to a private room where the attacker will be waiting. -If PC is the exploitable character and your lover is the target of the scheme, the kidnapper will approach you telling you that they want to get closer to your lover, that you should bring them to a private room that they specify, and will threaten you. If you fail to bring your lover by the end of the period, a death flag will be set. If you wish to remove the death flag, do what you're told. -Kidnapper could also be PC. To trigger the module tell an exploitable character that you wish to get closer to their lover, and specify a room where you want them to wait for you via \"Come here\" action. They will bring their lover and an h scene will start once all three of you are in the same room. [PC/NPC Module]",
+  "file": "Kidnapper",
+  "size": 31214,
+  "trigger_bytes": 28826
+ },
+ {
+  "name": "Killer",
+  "description": "Allows the player to kill NPCs. To trigger it apologize to someone and then immediately talk \"nevermind\" to them. [PC Only Module]",
+  "file": "Killer",
+  "size": 4983,
+  "trigger_bytes": 4703
+ },
+ {
+  "name": "Killjoy",
+  "description": "Really doesn't like happy people. [NPC Only Module]",
+  "file": "Killjoy",
+  "size": 2100,
+  "trigger_bytes": 1976
+ },
+ {
+  "name": "Kink Suit",
+  "description": "If it is told to \"put this on\" this card will change into \"kinksuit\" style. [PC/NPC Module]",
+  "file": "Kink Suit",
+  "size": 3896,
+  "trigger_bytes": 3688
+ },
+ {
+  "name": "Kleptomaniac",
+  "description": "Can randomly steal someone's item during a commotion. [PC/NPC Module]",
+  "file": "Kleptomaniac",
+  "size": 8174,
+  "trigger_bytes": 8004
+ },
+ {
+  "name": "Klutz",
+  "description": "Might forget to button up their clothes. [NPC Only Module]",
+  "file": "Klutz",
+  "size": 1375,
+  "trigger_bytes": 1241
+ },
+ {
+  "name": "Knife Magnet",
+  "description": "Irrationally draws the ire of would-be killers in the class towards this card. [PC/NPC Module]",
+  "file": "Knife Magnet",
+  "size": 1148,
+  "trigger_bytes": 928
+ },
+ {
+  "name": "Knockup Chance",
+  "description": "Changes impregnation to a chance based system. Every risky cumshot has a certain chance to get this card pregnant. Pregnancy reveal is on monday as usual. [NPC Module]",
+  "file": "Knockup Chance",
+  "size": 1910,
+  "trigger_bytes": 1540
+ },
+ {
+  "name": "Lightning Fingers",
+  "description": "No one is safe from being groped by this card. [PC/NPC Module]",
+  "file": "Lightning Fingers",
+  "size": 1213,
+  "trigger_bytes": 1047
+ },
+ {
+  "name": "Likes Quiet Places",
+  "description": "Feels more comfortable in quiter places (such as Behind Dojo, Rooftop, Infirmary, Outside Councel Room and Back Street). [PC/NPC Module]",
+  "file": "Likes Quiet Places",
+  "size": 3172,
+  "trigger_bytes": 2856
+ },
+ {
+  "name": "Loathsome",
+  "description": "Starts off with a bad impression from the rest of the class. [NPC/PC Module]",
+  "file": "Loathsome",
+  "size": 1093,
+  "trigger_bytes": 915
+ },
+ {
+  "name": "LOVE OF YOUR LIFE",
+  "description": "YOU WILL NEVER NEED WANT OR MEET ANOTHER PERSON WHO LOVES YOU MORE [NPC Only Module]",
+  "file": "LOVE OF YOUR LIFE",
+  "size": 7027,
+  "trigger_bytes": 6817
+ },
+ {
+  "name": "Lover Solidarity",
+  "description": "Will hate same people their lover hates. [PC/NPC Module]",
+  "file": "Lover Solidarity",
+  "size": 1258,
+  "trigger_bytes": 1106
+ },
+ {
+  "name": "Loving",
+  "description": "Passive increase in love towards their lovers. [PC/NPC Module]",
+  "file": "Loving",
+  "size": 820,
+  "trigger_bytes": 676
+ },
+ {
+  "name": "Loving Bully",
+  "description": "Bullies those they love who are weaker than them. Incompatible with regular Bully. Consider coupling this module with Sadist or lose love points rapidly. [NPC Only Module]",
+  "file": "Loving Bully",
+  "size": 3546,
+  "trigger_bytes": 3172
+ },
+ {
+  "name": "Low Endurance",
+  "description": "Will only consent to or initiate H once per day. [NPC Only Module]",
+  "file": "Low Endurance",
+  "size": 1743,
+  "trigger_bytes": 1577
+ },
+ {
+  "name": "Low Self-Esteem",
+  "description": "Grumbly and apologetic. Pathetic garbage human. [NPC Only Module]",
+  "file": "Low Self-Esteem",
+  "size": 2896,
+  "trigger_bytes": 2728
+ },
+ {
+  "name": "Loyal",
+  "description": "If dating someone, no physical contact allowed with anyone else. Will also avoid other suitors trying to steal them away. [NPC Only Module]",
+  "file": "Loyal",
+  "size": 5089,
+  "trigger_bytes": 4793
+ },
+ {
+  "name": "Lucky Sukebe",
+  "description": "The god of wind loves to lift her skirt up. [NPC Only Module]",
+  "file": "Lucky Sukebe",
+  "size": 1213,
+  "trigger_bytes": 1059
+ },
+ {
+  "name": "Magnetic Tits",
+  "description": "Card is more susceptible to being groped. [NPC Only Module]",
+  "file": "Magnetic Tits",
+  "size": 716,
+  "trigger_bytes": 564
+ },
+ {
+  "name": "Maneater",
+  "description": "Has a chance to kill their sexual partner if it's not their lover. [NPC Only Module]",
+  "file": "Maneater",
+  "size": 2122,
+  "trigger_bytes": 1930
+ },
+ {
+  "name": "Marriage",
+  "description": "Unlocks marriage for the card you applied this module on and their lover. Marriage module removes the upper limit of maximum amount of love points. Points over 30 are stored in a new relationship stat that can spill into regular love points if love points are less than maximum. Once OverLove reaches a set amount you will be proposed to. Don't give away your wedding ring to anyone else! NPCs can marry each other too! [PC/NPC Module] #Applying it to one card makes it possible for that card to marry. Just apply it to your PC, you don't also have to apply it to your waifu.",
+  "file": "Marriage",
+  "size": 21991,
+  "trigger_bytes": 20815
+ },
+ {
+  "name": "Martial Artist",
+  "description": "Adapts their fighting stance depending on their opponent's stance. Doesn't adapt stances against other Martial Artists. [PC/NPC Module]",
+  "file": "Martial Artist",
+  "size": 2803,
+  "trigger_bytes": 2497
+ },
+ {
+  "name": "Martial Arts Prodigy",
+  "description": "Depending on a card's fighting stance, following might modify outcome of a fight: All-Out: will have a higher chance of winning a fight if stronger than opponent; One Blow: has a chance to instantly win the fight that scales with strength; Exotic: may get either higher or lower chance to win the fight (lower chance has lower chance). [PC/NPC Module]",
+  "file": "Martial Arts Prodigy",
+  "size": 6038,
+  "trigger_bytes": 5282
+ },
+ {
+  "name": "Martial Loser",
+  "description": "Bad at fighting. [PC/NPC Module]",
+  "file": "Martial Loser",
+  "size": 2663,
+  "trigger_bytes": 2565
+ },
+ {
+  "name": "Mary",
+  "description": "Always regains virginity. [PC/NPC Module]",
+  "file": "Mary",
+  "size": 1167,
+  "trigger_bytes": 1069
+ },
+ {
+  "name": "Mass Murderer",
+  "description": "Tries to kill someone every night. [NPC Only Module]",
+  "file": "Mass Murderer",
+  "size": 2154,
+  "trigger_bytes": 2016
+ },
+ {
+  "name": "Masseuse",
+  "description": "Offers massages more often. [NPC Only Module]",
+  "file": "Masseuse",
+  "size": 848,
+  "trigger_bytes": 734
+ },
+ {
+  "name": "Medium Appreciator",
+  "description": "Prefers medium-sized breasts. [NPC Only Module]",
+  "file": "Medium Appreciator",
+  "size": 1857,
+  "trigger_bytes": 1719
+ },
+ {
+  "name": "Mind Before Matter",
+  "description": "Fights with brain, not muscles. [PC/NPC Module]",
+  "file": "Mind Before Matter",
+  "size": 2018,
+  "trigger_bytes": 1880
+ },
+ {
+  "name": "Mind Control",
+  "description": "If you are standing near a private room you can send an exploitable character or a character significantly dumber than you into a private room by targeting them and pressing \"a\" on the keyboard. If two characters are sent into the same room, forced sex will start between them that you can observe. [PC Only Module]",
+  "file": "Mind Control",
+  "size": 12894,
+  "trigger_bytes": 12232
+ },
+ {
+  "name": "Misanthrope",
+  "description": "Passively gains hate towards everyone. [PC/NPC Module]",
+  "file": "Misanthrope",
+  "size": 712,
+  "trigger_bytes": 574
+ },
+ {
+  "name": "Monogamous",
+  "description": "This character will not get into multiple relationships. [NPC Only Module]",
+  "file": "Monogamous",
+  "size": 1438,
+  "trigger_bytes": 1262
+ },
+ {
+  "name": "Moody",
+  "description": "Has sudden and unpredictable changes of mood. [PC/NPC Module]",
+  "file": "Moody",
+  "size": 1443,
+  "trigger_bytes": 1303
+ },
+ {
+  "name": "Murderous",
+  "description": "Not against killing people a lot. [NPC Only Module]",
+  "file": "Murderous",
+  "size": 1912,
+  "trigger_bytes": 1784
+ },
+ {
+  "name": "Musclehead",
+  "description": "Likes exercising too much. [NPC Only Module]",
+  "file": "Musclehead",
+  "size": 1764,
+  "trigger_bytes": 1648
+ },
+ {
+  "name": "Must Protecc",
+  "description": "When card is getting abused in any way, every person in the same room with the moderate sympathy for this card will attempt to come to the rescue. [PC/NPC Module]",
+  "file": "Must Protecc",
+  "size": 5321,
+  "trigger_bytes": 4965
+ },
+ {
+  "name": "Naive",
+  "description": "Believes that everyone is a nice person at heart. [PC/NPC Module]",
+  "file": "Naive",
+  "size": 1581,
+  "trigger_bytes": 1433
+ },
+ {
+  "name": "Narcissistic",
+  "description": "Is simply the best. [NPC Only Module]",
+  "file": "Narcissistic",
+  "size": 806,
+  "trigger_bytes": 700
+ },
+ {
+  "name": "Narcoleptic",
+  "description": "Suggestible when relaxed. [NPC Only Module]",
+  "file": "Narcoleptic",
+  "size": 932,
+  "trigger_bytes": 816
+ },
+ {
+  "name": "Natural Enemy-Abomination",
+  "description": "Strong match up against abominations",
+  "file": "Natural Enemy-Abomination",
+  "size": 1290,
+  "trigger_bytes": 1160
+ },
+ {
+  "name": "Natural Enemy-Alien",
+  "description": "Strong match up against aliens",
+  "file": "Natural Enemy-Alien",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Angel",
+  "description": "Strong match up against angels",
+  "file": "Natural Enemy-Angel",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Beastfolk",
+  "description": "Strong match up against beastfolk",
+  "file": "Natural Enemy-Beastfolk",
+  "size": 1272,
+  "trigger_bytes": 1152
+ },
+ {
+  "name": "Natural Enemy-Construct",
+  "description": "Strong match up against constructs",
+  "file": "Natural Enemy-Construct",
+  "size": 1274,
+  "trigger_bytes": 1152
+ },
+ {
+  "name": "Natural Enemy-Deity",
+  "description": "Strong match up against deities",
+  "file": "Natural Enemy-Deity",
+  "size": 1244,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Demon",
+  "description": "Strong match up against demons",
+  "file": "Natural Enemy-Demon",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Dragon",
+  "description": "Strong match up against dragons",
+  "file": "Natural Enemy-Dragon",
+  "size": 1250,
+  "trigger_bytes": 1140
+ },
+ {
+  "name": "Natural Enemy-Elf",
+  "description": "Strong match up against elf",
+  "file": "Natural Enemy-Elf",
+  "size": 1224,
+  "trigger_bytes": 1128
+ },
+ {
+  "name": "Natural Enemy-Fairy",
+  "description": "Strong match up against fairies",
+  "file": "Natural Enemy-Fairy",
+  "size": 1244,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Ghost",
+  "description": "Strong match up against ghosts",
+  "file": "Natural Enemy-Ghost",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Greenskin",
+  "description": "Strong match up against greenskins",
+  "file": "Natural Enemy-Greenskin",
+  "size": 1274,
+  "trigger_bytes": 1152
+ },
+ {
+  "name": "Natural Enemy-Human",
+  "description": "Strong match up against humans",
+  "file": "Natural Enemy-Human",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Inorganic",
+  "description": "Strong match up against inorganic creatures",
+  "file": "Natural Enemy-Inorganic",
+  "size": 1292,
+  "trigger_bytes": 1152
+ },
+ {
+  "name": "Natural Enemy-Machine",
+  "description": "Strong match up against machines",
+  "file": "Natural Enemy-Machine",
+  "size": 1258,
+  "trigger_bytes": 1144
+ },
+ {
+  "name": "Natural Enemy-Magic",
+  "description": "Strong match up against magic creatures",
+  "file": "Natural Enemy-Magic",
+  "size": 1260,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Meme",
+  "description": "Strong match up against memes",
+  "file": "Natural Enemy-Meme",
+  "size": 1234,
+  "trigger_bytes": 1132
+ },
+ {
+  "name": "Natural Enemy-Mutant",
+  "description": "Strong match up against mutants",
+  "file": "Natural Enemy-Mutant",
+  "size": 1250,
+  "trigger_bytes": 1140
+ },
+ {
+  "name": "Natural Enemy-Plant",
+  "description": "Strong match up against plants",
+  "file": "Natural Enemy-Plant",
+  "size": 1242,
+  "trigger_bytes": 1136
+ },
+ {
+  "name": "Natural Enemy-Psychic",
+  "description": "Strong match up against psychics",
+  "file": "Natural Enemy-Psychic",
+  "size": 1258,
+  "trigger_bytes": 1144
+ },
+ {
+  "name": "Natural Enemy-Spirit",
+  "description": "Strong match up against spirits",
+  "file": "Natural Enemy-Spirit",
+  "size": 1250,
+  "trigger_bytes": 1140
+ },
+ {
+  "name": "Natural Enemy-Undead",
+  "description": "Strong match up against undead",
+  "file": "Natural Enemy-Undead",
+  "size": 1248,
+  "trigger_bytes": 1140
+ },
+ {
+  "name": "Natural Enemy-Vampire",
+  "description": "Strong match up against vampires",
+  "file": "Natural Enemy-Vampire",
+  "size": 1260,
+  "trigger_bytes": 1146
+ },
+ {
+  "name": "Natural Enemy-Zombie",
+  "description": "Strong match up against zombies",
+  "file": "Natural Enemy-Zombie",
+  "size": 1250,
+  "trigger_bytes": 1140
+ },
+ {
+  "name": "Naughty",
+  "description": "Is more susceptible to lewd actions when they are aroused.[PC/NPC Module]",
+  "file": "Naughty",
+  "size": 7874,
+  "trigger_bytes": 7706
+ },
+ {
+  "name": "Neck Biter",
+  "description": "Bites the neck of the consenting victim during a kiss, sucking their blood and strength. [PC/NPC Module]",
+  "file": "Neck Biter",
+  "size": 2673,
+  "trigger_bytes": 2437
+ },
+ {
+  "name": "Nine Lives",
+  "description": "Instead of dying this card will switch to another style. Name the styles \"Life1\", \"Life2\" etc, up until the number you want. [PC/NPC Module]",
+  "file": "Nine Lives",
+  "size": 2803,
+  "trigger_bytes": 2495
+ },
+ {
+  "name": "No Bullshit",
+  "description": "Will kill those who pretend to be deaf. [NPC Only Module]",
+  "file": "No Bullshit",
+  "size": 755,
+  "trigger_bytes": 611
+ },
+ {
+  "name": "Not For Lewding",
+  "description": "Cannot consent to sex. [PC/NPC Module]",
+  "file": "Not For Lewding",
+  "size": 1543,
+  "trigger_bytes": 1429
+ },
+ {
+  "name": "Observant",
+  "description": "Is quick to adapt and react to mood changes of others. Is more likely to find out if their lover is cheating. [NPC Only Module]",
+  "file": "Observant",
+  "size": 10308,
+  "trigger_bytes": 10028
+ },
+ {
+  "name": "Obsession-Abomination",
+  "description": "Loves abominations. [PC/NPC Module]",
+  "file": "Obsession-Abomination",
+  "size": 1110,
+  "trigger_bytes": 990
+ },
+ {
+  "name": "Obsession-Alien",
+  "description": "Loves aliens. [PC/NPC Module]",
+  "file": "Obsession-Alien",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Angel",
+  "description": "Loves angels. [PC/NPC Module]",
+  "file": "Obsession-Angel",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Beastfolk",
+  "description": "Loves beastfolk. [PC/NPC Module]",
+  "file": "Obsession-Beastfolk",
+  "size": 1092,
+  "trigger_bytes": 982
+ },
+ {
+  "name": "Obsession-Construct",
+  "description": "Loves constructs. [PC/NPC Module]",
+  "file": "Obsession-Construct",
+  "size": 1094,
+  "trigger_bytes": 982
+ },
+ {
+  "name": "Obsession-Deity",
+  "description": "Loves deities. [PC/NPC Module]",
+  "file": "Obsession-Deity",
+  "size": 1064,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Demon",
+  "description": "Loves demons. [PC/NPC Module]",
+  "file": "Obsession-Demon",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Dragon",
+  "description": "Loves dragons. [PC/NPC Module]",
+  "file": "Obsession-Dragon",
+  "size": 1070,
+  "trigger_bytes": 970
+ },
+ {
+  "name": "Obsession-Elf",
+  "description": "Loves elves. [PC/NPC Module]",
+  "file": "Obsession-Elf",
+  "size": 1048,
+  "trigger_bytes": 958
+ },
+ {
+  "name": "Obsession-Fairy",
+  "description": "Loves fairies. [PC/NPC Module]",
+  "file": "Obsession-Fairy",
+  "size": 1064,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Ghost",
+  "description": "Loves ghosts. [PC/NPC Module]",
+  "file": "Obsession-Ghost",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Greenskin",
+  "description": "Loves greenskins. [PC/NPC Module]",
+  "file": "Obsession-Greenskin",
+  "size": 1094,
+  "trigger_bytes": 982
+ },
+ {
+  "name": "Obsession-Human",
+  "description": "Loves humans. [PC/NPC Module]",
+  "file": "Obsession-Human",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Inorganic",
+  "description": "Loves inorganic creatures. [PC/NPC Module]",
+  "file": "Obsession-Inorganic",
+  "size": 1112,
+  "trigger_bytes": 982
+ },
+ {
+  "name": "Obsession-Machine",
+  "description": "Loves machines. [PC/NPC Module]",
+  "file": "Obsession-Machine",
+  "size": 1078,
+  "trigger_bytes": 974
+ },
+ {
+  "name": "Obsession-Magic",
+  "description": "Love magic creatures. [PC/NPC Module]",
+  "file": "Obsession-Magic",
+  "size": 1078,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Meme",
+  "description": "Loves memes (why). [PC/NPC Module]",
+  "file": "Obsession-Meme",
+  "size": 1066,
+  "trigger_bytes": 962
+ },
+ {
+  "name": "Obsession-Mutant",
+  "description": "Loves mutants. [PC/NPC Module]",
+  "file": "Obsession-Mutant",
+  "size": 1070,
+  "trigger_bytes": 970
+ },
+ {
+  "name": "Obsession-Plant",
+  "description": "Loves plants. [PC/NPC Module]",
+  "file": "Obsession-Plant",
+  "size": 1062,
+  "trigger_bytes": 966
+ },
+ {
+  "name": "Obsession-Psychic",
+  "description": "Loves psychics. [PC/NPC Module]",
+  "file": "Obsession-Psychic",
+  "size": 1078,
+  "trigger_bytes": 974
+ },
+ {
+  "name": "Obsession-Spirit",
+  "description": "Loves spirits. [PC/NPC Module]",
+  "file": "Obsession-Spirit",
+  "size": 1070,
+  "trigger_bytes": 970
+ },
+ {
+  "name": "Obsession-Undead",
+  "description": "Loves undead creatures (ew). [PC/NPC Module]",
+  "file": "Obsession-Undead",
+  "size": 1098,
+  "trigger_bytes": 970
+ },
+ {
+  "name": "Obsession-Vampire",
+  "description": "Loves vampires. [PC/NPC Module]",
+  "file": "Obsession-Vampire",
+  "size": 1078,
+  "trigger_bytes": 974
+ },
+ {
+  "name": "Obsession-Zombie",
+  "description": "Loves zombies (ewwwwww). [PC/NPC Module]",
+  "file": "Obsession-Zombie",
+  "size": 1090,
+  "trigger_bytes": 970
+ },
+ {
+  "name": "On a Diet",
+  "description": "This card will not accept eating interactions and is reluctant to talk about food. [NPC Only Module]",
+  "file": "On a Diet",
+  "size": 1985,
+  "trigger_bytes": 1759
+ },
+ {
+  "name": "Pacifist",
+  "description": "Doesn't believe in violent solutions to problems. [NPC Only Module]",
+  "file": "Pacifist",
+  "size": 5447,
+  "trigger_bytes": 5289
+ },
+ {
+  "name": "Painful Periods",
+  "description": "On a certain time of month this card would not want to hold your hand. [PC/NPC]",
+  "file": "Painful Periods",
+  "size": 7086,
+  "trigger_bytes": 6890
+ },
+ {
+  "name": "Panty Thief",
+  "description": "A card with this module may decide to raid the locker rooms to steal panties if they are horny enough. [NPC Only Module]",
+  "file": "Panty Thief",
+  "size": 3404,
+  "trigger_bytes": 3134
+ },
+ {
+  "name": "Paranoid",
+  "description": "Will hide in the stall if they think they might get hurt. [NPC Only Module]",
+  "file": "Paranoid",
+  "size": 1611,
+  "trigger_bytes": 1433
+ },
+ {
+  "name": "Peacemaker",
+  "description": "Will try to reconcile characters with cold attitude towards each other. [NPC Only Module]",
+  "file": "Peacemaker",
+  "size": 1210,
+  "trigger_bytes": 1004
+ },
+ {
+  "name": "Perfectly Average",
+  "description": "Stats will gravitate towards the class average. [PC/NPC Module]",
+  "file": "Perfectly Average",
+  "size": 3246,
+  "trigger_bytes": 3078
+ },
+ {
+  "name": "Petty",
+  "description": "Easily offended. Will spread bad rumors. [NPC Only Module]",
+  "file": "Petty",
+  "size": 2460,
+  "trigger_bytes": 2326
+ },
+ {
+  "name": "Pheromones",
+  "description": "Unnaturally arousing. [PC/NPC Module]",
+  "file": "Pheromones",
+  "size": 1599,
+  "trigger_bytes": 1497
+ },
+ {
+  "name": "Philophobic",
+  "description": "Will not love, confess, or ask to be in a relationship with anyone. Doesn't like talking about love or going on dates. [PC/NPC Module]",
+  "file": "Philophobic",
+  "size": 3370,
+  "trigger_bytes": 3072
+ },
+ {
+  "name": "Photophobic",
+  "description": "This character is sensitive to light, which affects their capabilities in the outside areas during the day. [PC/NPC Module]",
+  "file": "Photophobic",
+  "size": 2830,
+  "trigger_bytes": 2554
+ },
+ {
+  "name": "Picky",
+  "description": "Prefers sexual partners with similar preferences. [NPC Only Module]",
+  "file": "Picky",
+  "size": 1690,
+  "trigger_bytes": 1538
+ },
+ {
+  "name": "Pillow Princess",
+  "description": "The characters with this trait will have H-AI turned on by default for their sex scenes. [PC Only Module]",
+  "file": "Pillow Princess",
+  "size": 1340,
+  "trigger_bytes": 1092
+ },
+ {
+  "name": "Polyamorous",
+  "description": "Does not mind if her lover sleeps around. [NPC Only Module]",
+  "file": "Polyamorous",
+  "size": 1993,
+  "trigger_bytes": 1845
+ },
+ {
+  "name": "Possessive",
+  "description": "This card will try to make a last person they've seen trying to court their lover to stop interacting  (except it's a closed love triangle) with them. [NPC Only Module]",
+  "file": "Possessive",
+  "size": 8884,
+  "trigger_bytes": 8520
+ },
+ {
+  "name": "Praying Mantis",
+  "description": "Feasts on their sexual partner after the sex in private room unless they are not hungry. [PC/NPC Module]",
+  "file": "Praying Mantis",
+  "size": 9464,
+  "trigger_bytes": 9220
+ },
+ {
+  "name": "Prefers Average Size",
+  "description": "Prefers characters of normal height. [NPC Only Module]",
+  "file": "Prefers Average Size",
+  "size": 1763,
+  "trigger_bytes": 1607
+ },
+ {
+  "name": "Prefers Fun-size",
+  "description": "Prefers short characters. [NPC Only Module]",
+  "file": "Prefers Fun-size",
+  "size": 1701,
+  "trigger_bytes": 1575
+ },
+ {
+  "name": "Prefers Jumbo-size",
+  "description": "Prefers tall characters. [NPC Only Module]",
+  "file": "Prefers Jumbo-size",
+  "size": 1719,
+  "trigger_bytes": 1591
+ },
+ {
+  "name": "Pregnancy",
+  "description": "Overhauls pregnancy. Girls can get pregnant on any day, if she gets knocked up it starts counting pregnancy from the day after. Pregnancy lasts for seven days, during which it switches to pregnancy style (use the 2chan pregnant outfit for belly inflation, name the style \"pregnant1\"). PC can get pregnant. NPCs can get pregnant and be fathers. NPCs can get each other pregnant. A pregnant card cannot get vanilla pregnancy. During the pregnancy she gets Impulsive and Always Hungry traits. She has a 25% chance to decline interactions due to mood swings - father of the child will not get hate/dislike points for being rejected due to this if he loves her. Father will have a chance to offer massages to her and take her out for lunches. Father will be more responsive to her actions, this depends on his love towards her and his virtue. [PC/NPC Module]",
+  "file": "Pregnancy",
+  "size": 16103,
+  "trigger_bytes": 14371
+ },
+ {
+  "name": "Prejudice-Abomination",
+  "description": "Less responsive towards abominations",
+  "file": "Prejudice-Abomination",
+  "size": 964,
+  "trigger_bytes": 842
+ },
+ {
+  "name": "Prejudice-Alien",
+  "description": "Less responsive towards aliens",
+  "file": "Prejudice-Alien",
+  "size": 916,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Angel",
+  "description": "Less responsive towards angels",
+  "file": "Prejudice-Angel",
+  "size": 916,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Beastfolk",
+  "description": "Less responsive towards beastfolk",
+  "file": "Prejudice-Beastfolk",
+  "size": 946,
+  "trigger_bytes": 834
+ },
+ {
+  "name": "Prejudice-Construct",
+  "description": "Less responsive towards constructs",
+  "file": "Prejudice-Construct",
+  "size": 948,
+  "trigger_bytes": 834
+ },
+ {
+  "name": "Prejudice-Deity",
+  "description": "Less responsive towards deities",
+  "file": "Prejudice-Deity",
+  "size": 918,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Demons",
+  "description": "Less responsive towards demons",
+  "file": "Prejudice-Demons",
+  "size": 918,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Dragon",
+  "description": "Less responsive towards dragons",
+  "file": "Prejudice-Dragon",
+  "size": 924,
+  "trigger_bytes": 822
+ },
+ {
+  "name": "Prejudice-Elf",
+  "description": "Less responsive towards elves",
+  "file": "Prejudice-Elf",
+  "size": 902,
+  "trigger_bytes": 810
+ },
+ {
+  "name": "Prejudice-Fairy",
+  "description": "Less responsive towards fairies",
+  "file": "Prejudice-Fairy",
+  "size": 918,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Ghost",
+  "description": "Less responsive towards ghosts",
+  "file": "Prejudice-Ghost",
+  "size": 916,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Greenskin",
+  "description": "Less responsive towards greenskins",
+  "file": "Prejudice-Greenskin",
+  "size": 948,
+  "trigger_bytes": 834
+ },
+ {
+  "name": "Prejudice-Human",
+  "description": "Less responsive towards humans",
+  "file": "Prejudice-Human",
+  "size": 916,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Inorganic",
+  "description": "Less responsive towards inorganic creatures",
+  "file": "Prejudice-Inorganic",
+  "size": 966,
+  "trigger_bytes": 834
+ },
+ {
+  "name": "Prejudice-Machine",
+  "description": "Less responsive towards machines",
+  "file": "Prejudice-Machine",
+  "size": 932,
+  "trigger_bytes": 826
+ },
+ {
+  "name": "Prejudice-Magic",
+  "description": "Less responsive towards magic creatures",
+  "file": "Prejudice-Magic",
+  "size": 934,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Meme",
+  "description": "Less responsive towards memes",
+  "file": "Prejudice-Meme",
+  "size": 908,
+  "trigger_bytes": 814
+ },
+ {
+  "name": "Prejudice-Mutant",
+  "description": "Less responsive towards mutants",
+  "file": "Prejudice-Mutant",
+  "size": 924,
+  "trigger_bytes": 822
+ },
+ {
+  "name": "Prejudice-Plant",
+  "description": "Less responsive towards plants",
+  "file": "Prejudice-Plant",
+  "size": 916,
+  "trigger_bytes": 818
+ },
+ {
+  "name": "Prejudice-Psychic",
+  "description": "Less responsive towards psychics",
+  "file": "Prejudice-Psychic",
+  "size": 932,
+  "trigger_bytes": 826
+ },
+ {
+  "name": "Prejudice-Spirit",
+  "description": "Less responsive towards spirits",
+  "file": "Prejudice-Spirit",
+  "size": 924,
+  "trigger_bytes": 822
+ },
+ {
+  "name": "Prejudice-Undead",
+  "description": "Less responsive towards undead",
+  "file": "Prejudice-Undead",
+  "size": 922,
+  "trigger_bytes": 822
+ },
+ {
+  "name": "Prejudice-Vampire",
+  "description": "Less responsive towards vampires",
+  "file": "Prejudice-Vampire",
+  "size": 932,
+  "trigger_bytes": 826
+ },
+ {
+  "name": "Prejudice-Zombie",
+  "description": "Less responsive towards zombies",
+  "file": "Prejudice-Zombie",
+  "size": 924,
+  "trigger_bytes": 822
+ },
+ {
+  "name": "Profane",
+  "description": "Corrupts others through sex and forceful actions. Those that are already under danger of Corruption are corrupted faster. Applies all sorts of debuffs. Headpats from a profane will make characters fail their next interaction. Hugs from a profane will make characters exploitable for one interaction. Kisses from a profane will make characters significantly more aroused. Gropes from a profane will make your lover think you are cheating. [PC/NPC Module] -@link et al.",
+  "file": "Profane",
+  "size": 20998,
+  "trigger_bytes": 20034
+ },
+ {
+  "name": "Puritan",
+  "description": "Might ask people who they've seen having public sex to behave a bit better by reprimanding them. [PC/NPC Module]",
+  "file": "Puritan",
+  "size": 13215,
+  "trigger_bytes": 12969
+ },
+ {
+  "name": "Race-Abomination",
+  "description": "Is an abomination",
+  "file": "Race-Abomination",
+  "size": 366,
+  "trigger_bytes": 292
+ },
+ {
+  "name": "Race-Alien",
+  "description": "Is an alien",
+  "file": "Race-Alien",
+  "size": 330,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Angel",
+  "description": "Is an angel",
+  "file": "Race-Angel",
+  "size": 330,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Beastfolk",
+  "description": "Is a beastfolk",
+  "file": "Race-Beastfolk",
+  "size": 350,
+  "trigger_bytes": 286
+ },
+ {
+  "name": "Race-Construct",
+  "description": "Is a construct",
+  "file": "Race-Construct",
+  "size": 352,
+  "trigger_bytes": 288
+ },
+ {
+  "name": "Race-Deity",
+  "description": "Is a deity",
+  "file": "Race-Deity",
+  "size": 328,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Demon",
+  "description": "Is a demon",
+  "file": "Race-Demon",
+  "size": 328,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Dragon",
+  "description": "Is a dragon",
+  "file": "Race-Dragon",
+  "size": 334,
+  "trigger_bytes": 282
+ },
+ {
+  "name": "Race-Elf",
+  "description": "Is an elf",
+  "file": "Race-Elf",
+  "size": 318,
+  "trigger_bytes": 276
+ },
+ {
+  "name": "Race-Fairy",
+  "description": "Is a fairy",
+  "file": "Race-Fairy",
+  "size": 328,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Ghost",
+  "description": "Is a ghost",
+  "file": "Race-Ghost",
+  "size": 328,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Greenskin",
+  "description": "Is a greenskin(Goblin, Orc, Ogre, etc.)",
+  "file": "Race-Greenskin",
+  "size": 402,
+  "trigger_bytes": 288
+ },
+ {
+  "name": "Race-Human",
+  "description": "Is a human",
+  "file": "Race-Human",
+  "size": 328,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Inorganic",
+  "description": "Is inorganic",
+  "file": "Race-Inorganic",
+  "size": 348,
+  "trigger_bytes": 288
+ },
+ {
+  "name": "Race-Machine",
+  "description": "Is a machine",
+  "file": "Race-Machine",
+  "size": 340,
+  "trigger_bytes": 284
+ },
+ {
+  "name": "Race-Magic",
+  "description": "Is magic",
+  "file": "Race-Magic",
+  "size": 324,
+  "trigger_bytes": 280
+ },
+ {
+  "name": "Race-Meme",
+  "description": "Is a meme",
+  "file": "Race-Meme",
+  "size": 322,
+  "trigger_bytes": 278
+ },
+ {
+  "name": "Race-Mutant",
+  "description": "Is a mutant",
+  "file": "Race-Mutant",
+  "size": 334,
+  "trigger_bytes": 282
+ },
+ {
+  "name": "Race-Plant",
+  "description": "Is a plant",
+  "file": "Race-Plant",
+  "size": 326,
+  "trigger_bytes": 278
+ },
+ {
+  "name": "Race-Psychic",
+  "description": "Is psychic",
+  "file": "Race-Psychic",
+  "size": 336,
+  "trigger_bytes": 284
+ },
+ {
+  "name": "Race-Spirit",
+  "description": "Is a spirit",
+  "file": "Race-Spirit",
+  "size": 334,
+  "trigger_bytes": 282
+ },
+ {
+  "name": "Race-Undead",
+  "description": "Is an undead",
+  "file": "Race-Undead",
+  "size": 336,
+  "trigger_bytes": 282
+ },
+ {
+  "name": "Race-Vampire",
+  "description": "Is a vampire",
+  "file": "Race-Vampire",
+  "size": 340,
+  "trigger_bytes": 284
+ },
+ {
+  "name": "Race-Zombie",
+  "description": "Is a zombie",
+  "file": "Race-Zombie",
+  "size": 334,
+  "trigger_bytes": 282
+ },
+ {
+  "name": "Resentful",
+  "description": "Holds a grudge. [PC/NPC Module]",
+  "file": "Resentful",
+  "size": 774,
+  "trigger_bytes": 686
+ },
+ {
+  "name": "Respects Moderacy",
+  "description": "Likes characters with normal virtue. [NPC Only Module]",
+  "file": "Respects Moderacy",
+  "size": 1657,
+  "trigger_bytes": 1507
+ },
+ {
+  "name": "Rival",
+  "description": "This module makes this card dislike all their rivals from the first time you add them to the class. To specify the rivals you can edit the \"rival\" global variable. Should look something like this: Rival = \"Lastname Firstname, First Last,  Nickname  \" [PC/NPC Module]",
+  "file": "Rival",
+  "size": 1689,
+  "trigger_bytes": 1137
+ },
+ {
+  "name": "Routine Fashion",
+  "description": "Every day changes their into the next style between RFStyleFirst and RFStyleLast. Compatible with Sunday Fashion [PC/NPC Module]",
+  "file": "Routine Fashion",
+  "size": 2780,
+  "trigger_bytes": 2486
+ },
+ {
+  "name": "Sadist",
+  "description": "Gains love from bullying. [PC/NPC module]",
+  "file": "Sadist",
+  "size": 8901,
+  "trigger_bytes": 8799
+ },
+ {
+  "name": "Safe Sex",
+  "description": "Will always use protection. [PC/NPC Module]",
+  "file": "Safe Sex",
+  "size": 8993,
+  "trigger_bytes": 8883
+ },
+ {
+  "name": "Saint",
+  "description": "Gives out various temporary blessings and mitigates corruption. A kiss will save you from a murder attempt in that period. A headpat from a saint A headpat will recover your stamina. Being groped might restore virginity.  A hug will give you a bonus on the roll of the next action you do. [PC/NPC module] -@k4, @link et al.",
+  "file": "Saint",
+  "size": 20473,
+  "trigger_bytes": 19801
+ },
+ {
+  "name": "Seducer",
+  "description": "Will slowly corrupt others by romantic actions [PC/NPC Module] -@link et al.",
+  "file": "Seducer",
+  "size": 10747,
+  "trigger_bytes": 10573
+ },
+ {
+  "name": "Semen Demon",
+  "description": "Gulps semen for lunch, so she will sometimes try to get men to cum in her mouth when aroused. Will only go after people she thinks will accept her advances, and will be very displeased if her advances are refused. Prefers the taste of her lovers, but will settle for one she loves the most if she isn't in a relationship. She is persistent, so don't keep her hungry. [NPC Only Module]",
+  "file": "Semen Demon",
+  "size": 10958,
+  "trigger_bytes": 10160
+ },
+ {
+  "name": "Sentimental",
+  "description": "Likes cards who are in posession of their personal friend item.[PC/NPC Module]",
+  "file": "Sentimental",
+  "size": 2356,
+  "trigger_bytes": 2170
+ },
+ {
+  "name": "Serial Killer",
+  "description": "Tries to kill someone with specific attribute they probably don't like every night. [NPC Only Module]",
+  "file": "Serial Killer",
+  "size": 10521,
+  "trigger_bytes": 10285
+ },
+ {
+  "name": "Serial Smoocher",
+  "description": "Tends to go around kissing people without their consent. [NPC Only Module]",
+  "file": "Serial Smoocher",
+  "size": 3212,
+  "trigger_bytes": 3026
+ },
+ {
+  "name": "Sex Addict",
+  "description": "Loses virtue each day of not having sex. Reverts once satisfied. [PC/NPC Module]",
+  "file": "Sex Addict",
+  "size": 3453,
+  "trigger_bytes": 3265
+ },
+ {
+  "name": "Sex Crazed",
+  "description": "When aroused this NPC will attempt to rape someone. [NPC Only Module]",
+  "file": "Sex Crazed",
+  "size": 1172,
+  "trigger_bytes": 1006
+ },
+ {
+  "name": "Sex Hater",
+  "description": "Hates sex and erotic activities. [PC/NPC Module]",
+  "file": "Sex Hater",
+  "size": 3840,
+  "trigger_bytes": 3718
+ },
+ {
+  "name": "Sexually Confused",
+  "description": "Has their sexual orientation influenced by the gender of people they flirt with. [PC/NPC Module]",
+  "file": "Sexually Confused",
+  "size": 17041,
+  "trigger_bytes": 16807
+ },
+ {
+  "name": "Shaming",
+  "description": "Will attempt to strip the opponent when they fight or rape. If successful, they will be naked until they reach the changing room and change their clothes. Amount of clothes stolen depends on the outcome of the fight and strength difference. [PC/NPC Module]",
+  "file": "Shaming",
+  "size": 7118,
+  "trigger_bytes": 6584
+ },
+ {
+  "name": "Significant Other",
+  "description": "This module makes this card start consider all their significant others as lovers from the first time you add them to the class. Does not affect their relationship points. To specify the SOs you can edit the \"significant_other\" global variable. Should look something like this: significant_other = \"Lastname Firstname, First Last,  Nickname  \" [PC/NPC Module]",
+  "file": "Significant Other",
+  "size": 2083,
+  "trigger_bytes": 1321
+ },
+ {
+  "name": "Skinwalker",
+  "description": "In Navajo culture, a skin-walker (yee naaldlooshii) is a type of harmful witch who has the ability to turn into, possess, or disguise themselves. [NPC Module] -@link @croissant",
+  "file": "Skinwalker",
+  "size": 12208,
+  "trigger_bytes": 11828
+ },
+ {
+  "name": "Slayer-Abomination",
+  "description": "Knows how to kill abominations",
+  "file": "Slayer-Abomination",
+  "size": 2316,
+  "trigger_bytes": 2212
+ },
+ {
+  "name": "Slayer-Alien",
+  "description": "Knows how to kill aliens",
+  "file": "Slayer-Alien",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Angel",
+  "description": "Knows how to kill angels",
+  "file": "Slayer-Angel",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Beastfolk",
+  "description": "Knows how to kill beastfolk",
+  "file": "Slayer-Beastfolk",
+  "size": 2298,
+  "trigger_bytes": 2204
+ },
+ {
+  "name": "Slayer-Construct",
+  "description": "Knows how to kill constructs",
+  "file": "Slayer-Construct",
+  "size": 2300,
+  "trigger_bytes": 2204
+ },
+ {
+  "name": "Slayer-Deity",
+  "description": "Knows how to kill deity",
+  "file": "Slayer-Deity",
+  "size": 2266,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Demon",
+  "description": "Knows how to kill demons",
+  "file": "Slayer-Demon",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Dragon",
+  "description": "Knows how to kill dragons",
+  "file": "Slayer-Dragon",
+  "size": 2276,
+  "trigger_bytes": 2192
+ },
+ {
+  "name": "Slayer-Elf",
+  "description": "Knows how to kill elves",
+  "file": "Slayer-Elf",
+  "size": 2254,
+  "trigger_bytes": 2180
+ },
+ {
+  "name": "Slayer-Fairy",
+  "description": "Knows how to kill fairies",
+  "file": "Slayer-Fairy",
+  "size": 2270,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Ghost",
+  "description": "Knows how to kill ghosts",
+  "file": "Slayer-Ghost",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Greenskin",
+  "description": "Knows how to kill greenskins",
+  "file": "Slayer-Greenskin",
+  "size": 2300,
+  "trigger_bytes": 2204
+ },
+ {
+  "name": "Slayer-Human",
+  "description": "Knows how to kill humans",
+  "file": "Slayer-Human",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Inorganic",
+  "description": "Knows how to kill inorganic creatures",
+  "file": "Slayer-Inorganic",
+  "size": 2318,
+  "trigger_bytes": 2204
+ },
+ {
+  "name": "Slayer-Machine",
+  "description": "Knows how to kill machines",
+  "file": "Slayer-Machine",
+  "size": 2284,
+  "trigger_bytes": 2196
+ },
+ {
+  "name": "Slayer-Magic",
+  "description": "Knows how to kill magic creatures",
+  "file": "Slayer-Magic",
+  "size": 2286,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Meme",
+  "description": "Knows how to kill memes",
+  "file": "Slayer-Meme",
+  "size": 2260,
+  "trigger_bytes": 2184
+ },
+ {
+  "name": "Slayer-Mutant",
+  "description": "Knows how to kill mutants",
+  "file": "Slayer-Mutant",
+  "size": 2276,
+  "trigger_bytes": 2192
+ },
+ {
+  "name": "Slayer-Plant",
+  "description": "Knows how to kill plants",
+  "file": "Slayer-Plant",
+  "size": 2268,
+  "trigger_bytes": 2188
+ },
+ {
+  "name": "Slayer-Psychic",
+  "description": "Knows how to kill psychics",
+  "file": "Slayer-Psychic",
+  "size": 2284,
+  "trigger_bytes": 2196
+ },
+ {
+  "name": "Slayer-Spirit",
+  "description": "Knows how to kill spirits",
+  "file": "Slayer-Spirit",
+  "size": 2276,
+  "trigger_bytes": 2192
+ },
+ {
+  "name": "Slayer-Undead",
+  "description": "Knows how to kill undead",
+  "file": "Slayer-Undead",
+  "size": 2274,
+  "trigger_bytes": 2192
+ },
+ {
+  "name": "Slayer-Vampire",
+  "description": "Knows how to kill vampires",
+  "file": "Slayer-Vampire",
+  "size": 2284,
+  "trigger_bytes": 2196
+ },
+ {
+  "name": "Slayer-Zombie",
+  "description": "Knows how to kill zombies",
+  "file": "Slayer-Zombie",
+  "size": 2276,
+  "trigger_bytes": 2192
+ },
+ {
+  "name": "Sleepyhead",
+  "description": "Changes to the \"Morning\" style on weekday mornings. Changes back on successful headpat. [PC/NPC Module]",
+  "file": "Sleepyhead",
+  "size": 1801,
+  "trigger_bytes": 1567
+ },
+ {
+  "name": "Slim Striker",
+  "description": "Prefers thin characters. [NPC Only Module]",
+  "file": "Slim Striker",
+  "size": 1659,
+  "trigger_bytes": 1543
+ },
+ {
+  "name": "Snobbish",
+  "description": "Doesn't like hanging out with unpopular people very much, and most definitely won't date those. [NPC Only Module]",
+  "file": "Snobbish",
+  "size": 5913,
+  "trigger_bytes": 5663
+ },
+ {
+  "name": "Sport Style",
+  "description": "Changes to \"SportStyle\" when doing sports, or to \"SportStyle_corrupted\" if corrupted. [PC/NPC Module]",
+  "file": "Sport Style",
+  "size": 4784,
+  "trigger_bytes": 4552
+ },
+ {
+  "name": "Stage Fright",
+  "description": "Performs worse during exams. [PC/NPC Module]",
+  "file": "Stage Fright",
+  "size": 920,
+  "trigger_bytes": 800
+ },
+ {
+  "name": "Stalker",
+  "description": "Prone to follow people. Might approach you if they follow you into an empty room. [NPC Only Module]",
+  "file": "Stalker",
+  "size": 12763,
+  "trigger_bytes": 12543
+ },
+ {
+  "name": "Star-struck",
+  "description": "Admires characters more popular than them. [NPC Only Module]",
+  "file": "Star-struck",
+  "size": 2846,
+  "trigger_bytes": 2696
+ },
+ {
+  "name": "Sticky Cum",
+  "description": "When this card fucks someone and cums on their body or in their mouth, the cum will remain on until they go wash it off in the bathroom. [PC/NPC Module]",
+  "file": "Sticky Cum",
+  "size": 13568,
+  "trigger_bytes": 13236
+ },
+ {
+  "name": "Stubborn",
+  "description": "Might need to be told \"no\" at least twice for them to understand. [NPC Only Module]",
+  "file": "Stubborn",
+  "size": 2291,
+  "trigger_bytes": 2101
+ },
+ {
+  "name": "Studious",
+  "description": "Likes studying too much. [NPC Only Module]",
+  "file": "Studious",
+  "size": 1732,
+  "trigger_bytes": 1624
+ },
+ {
+  "name": "Succubus",
+  "description": "Becomes stronger through sexual intercourse, draining her prey and taking their strength. [PC/NPC Module]",
+  "file": "Succubus",
+  "size": 5110,
+  "trigger_bytes": 4876
+ },
+ {
+  "name": "Sugar Lips",
+  "description": "Card is more susceptible to receiving kisses. [NPC Only Module]",
+  "file": "Sugar Lips",
+  "size": 748,
+  "trigger_bytes": 594
+ },
+ {
+  "name": "Sugar Rush",
+  "description": "All sleepy and useless until they eat something, and after that they are not that sleepy and useless (for a while). [PC/NPC Module]",
+  "file": "Sugar Rush",
+  "size": 6547,
+  "trigger_bytes": 6257
+ },
+ {
+  "name": "Summoner",
+  "description": "Knows how summon and control a demon. Excerpt from their notebook: \"If you wish to summon a demon you will need a suitable body to serve as its material form and a strong emotional bond to serve as its bindings. A life of your loved one would be perfect for this task. Be careful not to use weak bonds as this can lead to summoning an unbound demon and can cause disaster in your life and everyone around you. At least a week of time together should be sufficient. Once you've decided on the sacrifice you have to prepare them. Ask the loved one if they still love you. Tell them to put on the magical trinket. It will weaken their body and will and strengthen your bond. Once the vessel is ready all you need to do is spill their blood by any means available. You can orchestrate their murder or kill them yourself if you can. Don't worry if you can't go through with it yourself; not everyone is strong enough to finish off their loved one. You can perform a ritual to send their soul to hell directly without having to kill a human being with your own hands. First you will need a room with strong spiritual energies. A place of worship is ideal for this. Prepare this room by ending the period there. Do this three times in one day and by evening you have your ritual chamber ready, altar and everything. Then you have to bring your marked sacrifice to the ritual altar. Make love to them one last time and at the end of it their body will vanish. At home concentrate on the demon you would want to summon and if they answer your call you will see them the next day taking the seat of the sacrifice. Congratulations! When your time comes, you'll meet your lover again in hell.\"",
+  "file": "Summoner",
+  "size": 12837,
+  "trigger_bytes": 9451
+ },
+ {
+  "name": "Sunday Cosplay",
+  "description": "On Sunday mornings, picks a random style between ones named CosplayFirst to CosplayLast. Changes back after returning home. Do not use together with Sunday Fashion module. [PC/NPC Module]",
+  "file": "Sunday Cosplay",
+  "size": 3124,
+  "trigger_bytes": 2714
+ },
+ {
+  "name": "Sunday Fashion",
+  "description": "On Sunday morning changes to their \"Sunday\" style. Changes back on when gets back home. [PC/NPC Module]",
+  "file": "Sunday Fashion",
+  "size": 2632,
+  "trigger_bytes": 2390
+ },
+ {
+  "name": "Swift Hands",
+  "description": "Depending on strength, the player might undress the target with gropes. [PC Only Module]",
+  "file": "Swift Hands",
+  "size": 1221,
+  "trigger_bytes": 1015
+ },
+ {
+  "name": "Swimsuit Style",
+  "description": "Changes to \"SwimsuitStyle\" when doing swimming, or to \"SwimsuitStyle_corrupted\" if corrupted. [PC/NPC Module]",
+  "file": "Swimsuit Style",
+  "size": 4998,
+  "trigger_bytes": 4744
+ },
+ {
+  "name": "Teacher Style",
+  "description": "If this card is added to teacher seat, it will use \"Teacher\" style as a default one. [PC/NPC Module]",
+  "file": "Teacher Style",
+  "size": 462,
+  "trigger_bytes": 228
+ },
+ {
+  "name": "Teacher Thirsty",
+  "description": "Likes teachers. [NPC Only Module]",
+  "file": "Teacher Thirsty",
+  "size": 1647,
+  "trigger_bytes": 1543
+ },
+ {
+  "name": "Thief",
+  "description": "Might steal items through Touches or Massages. [PC/NPC Module]",
+  "file": "Thief",
+  "size": 4712,
+  "trigger_bytes": 4570
+ },
+ {
+  "name": "Thorough",
+  "description": "Won't get arrested for murder if no one actually saw it. [PC/NPC Module]",
+  "file": "Thorough",
+  "size": 2943,
+  "trigger_bytes": 2775
+ },
+ {
+  "name": "Thot Patrol",
+  "description": "Explains less than virtuous people how to behave with their fists. [PC/NPC Module]",
+  "file": "Thot Patrol",
+  "size": 4669,
+  "trigger_bytes": 4475
+ },
+ {
+  "name": "Toilet Police",
+  "description": "Does not take kindly to people who enter the wrong toilet. [NPC Only Module]",
+  "file": "Toilet Police",
+  "size": 4384,
+  "trigger_bytes": 4198
+ },
+ {
+  "name": "Tone-deaf",
+  "description": "Is terrible at singing. [PC/NPC Module]",
+  "file": "Tone-deaf",
+  "size": 3211,
+  "trigger_bytes": 3107
+ },
+ {
+  "name": "Totally Random",
+  "description": "When added to the class this character will be given... - A random personality (no modded). - Random character stats. - Up to three new random traits and sexual preferences. [PC/NPC Module]",
+  "file": "Totally Random",
+  "size": 2254,
+  "trigger_bytes": 1832
+ },
+ {
+  "name": "Trend Follower",
+  "description": "Can't help but get their predisposition towards someone get affected by the general opinion towards the person in quesiton, unless they have some sort of strong opinion already. [NPC Only Module]",
+  "file": "Trend Follower",
+  "size": 5266,
+  "trigger_bytes": 4840
+ },
+ {
+  "name": "Truancy",
+  "description": "This card may choose to skip school for the entire day. [NPC Only Module]",
+  "file": "Truancy",
+  "size": 2051,
+  "trigger_bytes": 1883
+ },
+ {
+  "name": "Tutor",
+  "description": "Helps others with academic pursuits. [PC/NPC Module]",
+  "file": "Tutor",
+  "size": 3582,
+  "trigger_bytes": 3460
+ },
+ {
+  "name": "Ugly",
+  "description": "Interactions of this card have their success percentage cut in half. [PC/NPC Module]",
+  "file": "Ugly",
+  "size": 718,
+  "trigger_bytes": 534
+ },
+ {
+  "name": "Unchivalrous",
+  "description": "Does not take the refusal of their advances very well. [NPC Only Module]",
+  "file": "Unchivalrous",
+  "size": 2561,
+  "trigger_bytes": 2385
+ },
+ {
+  "name": "Uncredible",
+  "description": "People just don't trust their opinion, you know? [PC/NPC Module]",
+  "file": "Uncredible",
+  "size": 906,
+  "trigger_bytes": 750
+ },
+ {
+  "name": "Under Pressure Perfomance",
+  "description": "Performs better than usual during exams. [PC/NPC Module]",
+  "file": "Under Pressure Perfomance",
+  "size": 1076,
+  "trigger_bytes": 906
+ },
+ {
+  "name": "Undying",
+  "description": "Does not die",
+  "file": "Undying",
+  "size": 17623,
+  "trigger_bytes": 17577
+ },
+ {
+  "name": "Unlikely Confidence",
+  "description": "Can avoid being forced with a chance based on the stats difference. [PC/NPC Module]",
+  "file": "Unlikely Confidence",
+  "size": 3617,
+  "trigger_bytes": 3405
+ },
+ {
+  "name": "Unlovable",
+  "description": "Might make a good friend, but nothing more than that. [PC/NPC Module]",
+  "file": "Unlovable",
+  "size": 1719,
+  "trigger_bytes": 1555
+ },
+ {
+  "name": "Values Perfect Measurements",
+  "description": "Prefers normal figure characters. [NPC Only Module]",
+  "file": "Values Perfect Measurements",
+  "size": 1827,
+  "trigger_bytes": 1663
+ },
+ {
+  "name": "Vengeful",
+  "description": "Will try to avenge if someone they care about is killed. [NPC Only Module]",
+  "file": "Vengeful",
+  "size": 3177,
+  "trigger_bytes": 3005
+ },
+ {
+  "name": "Vigilante",
+  "description": "Will try to stop people with murderous intentions whenever they see them. [NPC Only Module]",
+  "file": "Vigilante",
+  "size": 2318,
+  "trigger_bytes": 2110
+ },
+ {
+  "name": "Virtuous",
+  "description": "Refuses to date people who aren't as serious about relationships as them. [NPC Only Module]",
+  "file": "Virtuous",
+  "size": 1607,
+  "trigger_bytes": 1401
+ },
+ {
+  "name": "Vivid Imagination",
+  "description": "When talking about lewd might start imagining the sex scene. Apply to PC card only. [PC Only Module]",
+  "file": "Vivid Imagination",
+  "size": 9094,
+  "trigger_bytes": 8852
+ },
+ {
+  "name": "Voice of the Sirens",
+  "description": "People can't help but fall in love with their voice. [PC/NPC Module]",
+  "file": "Voice of the Sirens",
+  "size": 3411,
+  "trigger_bytes": 3229
+ },
+ {
+  "name": "Voyeur",
+  "description": "Spectate a couple that is publicly fucking by targeting them and pressing \"s\" on your keyboard. [PC Only Module]",
+  "file": "Voyeur",
+  "size": 5615,
+  "trigger_bytes": 5371
+ },
+ {
+  "name": "Wants Kids",
+  "description": "Is happy to have unprotected sex even on dangerous days. [PC/NPC Female Only Module]",
+  "file": "Wants Kids",
+  "size": 5260,
+  "trigger_bytes": 5064
+ },
+ {
+  "name": "Wary",
+  "description": "Can sense when something is off about a person and will be more hesitant to interact with them. [NPC Only Module]",
+  "file": "Wary",
+  "size": 6736,
+  "trigger_bytes": 6494
+ },
+ {
+  "name": "Weight Issues",
+  "description": "Character has weight gain issues and their appearance noticeably changes with their weight. Healthy lifestyle requires one meal during lunch and one meal in the evening. Eating less would lose weight, while eating more will gain it. Exercise helps to offset some extra meals. Depending on weight the style would shift from Weight_-100 to Weight_100 with any amount of granularity. Style switch happens in the morning. [PC/NPC Module]",
+  "file": "Weight Issues",
+  "size": 5452,
+  "trigger_bytes": 4550
+ },
+ {
+  "name": "Whimsical",
+  "description": "Changes sexual preferences, virtue and orientation with each action. [PC/NPC Module]",
+  "file": "Whimsical",
+  "size": 1451,
+  "trigger_bytes": 1257
+ },
+ {
+  "name": "White Knight",
+  "description": "Fights to protect people who ask for their help or people that they witnessed being raped. If someone asks for protection White Knight will try to fight their abuser. Winning that fight will discourage future rape attempts for a time. If the player is a victim of rape, they can also ask for White Knight's help by spreading bad rumors about their abuser to the White Knight. [PC/NPC Module]",
+  "file": "White Knight",
+  "size": 15761,
+  "trigger_bytes": 14947
+ },
+ {
+  "name": "Wimp",
+  "description": "Cannot refuse lewd or romantic actions if being asked by someone they like. [PC/NPC Module]",
+  "file": "Wimp",
+  "size": 2186,
+  "trigger_bytes": 1988
+ },
+ {
+  "name": "Yandere Type A",
+  "description": "Will kill their lover if they catch them cheating. [NPC Only Module]",
+  "file": "Yandere Type A",
+  "size": 6015,
+  "trigger_bytes": 5843
+ },
+ {
+  "name": "Yandere Type B",
+  "description": "Will kill the one their lover cheats with if they catch them cheating. [NPC Only Module]",
+  "file": "Yandere Type B",
+  "size": 6059,
+  "trigger_bytes": 5847
+ },
+ {
+  "name": "Yandere Type C",
+  "description": "There is a chance they will kill people their lover doesn't like. [NPC Only Module]",
+  "file": "Yandere Type C",
+  "size": 3850,
+  "trigger_bytes": 3648
+ }
+]
