@@ -14,25 +14,31 @@
 
 ---
 
-## ★ STATUS — wo stehen wir (Stand 2026-06-24, spät) ★
-> Konsolidiert aus ALLEN MDs. Legende: ✅ fertig+bewiesen · 🔶 gebaut/Test offen · ⬜ geplant.
-> Detail-Baustand: **`HANDOVER_evolution_2026-06-25.md`** (globaler-Pool-Pivot + Pipeline, läuft end-to-end) →
-> dann `HANDOVER_transfer_2026-06-24.md`. §N = Abschnitt weiter unten in dieser Notiz.
-> **✅ MODUL-FORMAT GEKNACKT (2026-06-26):** `module_format.py` = vollständiger Codec (decode+encode), verifiziert
-> byte-genau auf **466/466 Modulen × 2 Welten = 932 Dateien** (clean parse + roundtrip). Format-Quelle: AAU
-> `Functions/Serialize.h` (generische ReadData/WriteData). Details: `HANDOVER_module_format_RE_2026-06-26.md` (§SOLVED).
-> `module_schema.py`/`module_decode.py` = überholte WIP-Vorläufer. Regressionstest: `_batch_test.py`.
-> **✅ ID-KATALOG FERTIG:** `MODULE_ID_CATALOG.md` (Events/Actions/Expressions, verifiziert). Builder: `module_authoring.py`.
-> **✅ REROUTE-HOOK + STABILE mwa_id + SSOT-RE-KEY (2026-06-26).** ★ NEUESTER EINSTIEG:
-> **`HANDOVER_reroute_mwaid_2026-06-26.md`** ★. Hook auf `AAUCardData::UpdateModules` schreibt die Karten-
-> Modul-Liste zur Laufzeit (Confinement via Hook in-game bewiesen, Luka als reiner Hook-Beweis); rename-stabile
-> `mwa_id` als Karten-Global (Round-Trip bewiesen); memory.db + API auf mwa_id umgekeyt. NEXT = Phase 3 (mwa-Flag
-> + clear+replace). Vorgänger (Stufe davor): **`HANDOVER_confinement_2026-06-26.md`**. Python/Lua-Brücke voll bewiesen (char_id-basiert, EINE memory.db,
-> `char_confine`-Tabelle, Auto-Confine der jail-residents, `@b:`/`@i:` Card-Storage-Flags via apply_state). ABER:
-> NPCs free-roamen, gehen nicht in Zelle. 2 Ursachen: (A) Lua `setCardStorage`→Class Storage ≠ Engine
-> `inst->m_cardData` (Modul liest woanders) · (B) Stufe-1 (flaglos) greift AUCH nicht → Verdacht: **Module müssen
-> auf Karte „In Use", laden nicht global**. Offener Test: Confinement via AA2QtEdit auf 1 jail-Karte installieren.
-> Architektur-Regeln (char_id≠Seat, eine DB, §4.6-Vorinstallation, jail=alle confined) im Handover §3.
+## ★ STATUS — wo stehen wir (Stand 2026-06-27) ★
+> **★ Aktueller, sauberer Ist-Stand + ALLES-Wissen = `MASTER_BLUEPRINT.md`** (§A was geht / was nicht / wo wir
+> stehen · §B konsolidierter Latenz-Index = alles entdeckt-aber-ungenutzt · §C Überholt/Gelöst). Diese Notiz =
+> historischer Akkumulator; **bei Widerspruch gilt der BLUEPRINT.** Legende: ✅ bewiesen · 🔶 gebaut/Test offen · ⬜ geplant.
+>
+> **✅ MODUL-FORMAT GEKNACKT + ID-KATALOG:** `module_format.py` = vollständiger Codec, byte-genau auf 932 Dateien
+> (Quelle: AAU `Serialize.h`). `MODULE_ID_CATALOG.md` (Events/Actions/Expressions). Builder: `module_authoring.py`.
+> `module_schema.py`/`module_decode.py` = überholte Vorläufer. Regressionstest `_batch_test.py`.
+>
+> **★ DURCHBRÜCHE (2026-06-26/27, alle in-game bewiesen):**
+> - **Reroute-Hook** auf `AAUCardData::UpdateModules` injiziert Module **in-memory beim Laden** — **Karten werden
+>   NIE verändert** (pristine, teilbar). Native `AddModule` via Binär-Hook. (Löst das alte „Module müssen auf der
+>   Karte In-Use sein"-Problem = Ursache B.)
+> - **Wert-gegate Dispatcher + Card-Storage-Brücke BEWIESEN:** das gegate Confinement liest ein SSOT-Flag (von
+>   `apply_state` via `setCardStorage`) und confined selbst → die ganze **wert-getriebene Evolutions-Mechanik,
+>   karten-frei, on-the-fly.** (Löst „Ursache A": die Brücke trägt, kein nativer Hack, kein Class-Storage-Workaround.)
+> - **Stabile rename-feste Identität** + memory.db/API umgekeyt. Identität = **cardfile→id in der SSOT**
+>   (aktives-Roster-Modell), **nie Name, nie Seat.** Evolution = **Verhalten über Module/Flags, NIE Vanilla-Stats schreiben** (die sind read-only Input).
+> - **Sauberes portables Paket** `MWA2_V0.1/` (system/-Struktur, Python gebündelt, Install.bat) → GitHub `MWA2-0.001`.
+>
+> **NEXT:** Identitäts-Verdrahtung `cardfile→id` beim Roster-Bau (inkl. **school-Karten-Erkennung = die einzige
+> echte Unbekannte**); Evolutions-Regeln als gegate Dispatcher (Status/Race/Loneliness/Training); Schwellen kalibrieren.
+> **★ ÜBERHOLT — NICHT mehr verfolgen** (Details Blueprint §C): „Karten-Splice / Karten-Tag / mwa_id-auf-Karte"
+> (Karten nie verändern); „Ursache-A Class-Storage-Workaround" (Brücke trägt); resolver `MODULE_EFFECTS`/Stat-Writing (entfernt).
+> Frühere Einstiege (historisch): `HANDOVER_reroute_mwaid` / `_confinement` / `_module_format_RE` / `_evolution` / `_transfer`.
 
 **FUNDAMENT**
 - ✅ **Sofort-Switch** 2 Welten (PPeX multi-client-Patch, Mutex-Bypass, Suspend) — §2.1/2.2
@@ -49,10 +55,10 @@
   char_rels füllt sich automatisch aus dem school-Roster (56 rels erfasst). `social_wealth` abgeleitet. — §11/§2.4c/2.4d
 - 🔶 **2c jail-Restore** (`restore_rels`: ko-präsente Paare in jail) — gebaut, **Test offen** (frische Enslaves nötig)
 - ✅ **Modul-Scan** 466 Module → `module_catalog.json`/`.md` — §5/4.6
-- 🔶 **Modul-Editor** (Evolution; `aaUd`-Chunk) — **read+add LIVE bewiesen** (`card_edit.py`): Karten-Element =
-  Definitionsdatei byte-identisch → Splice ohne Trigger-Dekodierung; Roundtrip auf Airi-Kopie (count 9→10,
-  TrAt-Member erhalten, PNG-CRCs valid, Verbatim-Safety-Guard). Offen: In-Game-Effekt-Test + Remove. — §4.6/4.7
-- ⬜ **Zustand→Modul-MAP** (hand-kuratiert, das „Gehirn") — §4.6/4.7
+- ✅ **Modul-Anwendung = Reroute-Hook (in-memory), NICHT Karten-Editieren.** Der frühere Karten-Splice-Ansatz
+  (`card_edit.py` add) ist **VERWORFEN — Karten werden nie verändert** (Blueprint §C); `card_edit.py` bleibt nur als
+  READER. Module kommen zur Laufzeit über `module_reroute.lua` (Hook auf `UpdateModules`) auf die Live-Karte. — Blueprint §A
+- ⬜ **Zustand→Modul-MAP** (hand-kuratiert, das „Gehirn") — als gegate Dispatcher, die SSOT-Flags lesen — §4.6/4.7
 - ⬜ **Rückkehr-Pfad** jail→school (Journal trägt `to_world='school'` schon) — §2.4d
 
 **RPG-/EVOLUTIONS-SCHICHT**
